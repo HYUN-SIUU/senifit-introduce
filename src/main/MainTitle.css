@@ -1,5 +1,5 @@
 .main-title {
-    margin-top: 153.33px;
+    margin-top: 160px;
     display: flex;
     padding: 96px 96px 80px 96px;
     flex-direction: column;
@@ -11,10 +11,7 @@
 
 .main-title .h2 {
     color: #0D0D0D;
-    font-family: "IBM Plex Sans KR";
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
     margin: 0;
 }
@@ -25,9 +22,7 @@
 
 .main-title .h1 {
     color: #000;
-    font-family: "IBM Plex Sans KR";
     font-size: 36px;
-    font-style: normal;
     font-weight: 500;
     line-height: 150%;
     letter-spacing: -0.72px;
@@ -52,9 +47,7 @@
 
 .sini-section p {
     color: #000;
-    font-family: "IBM Plex Sans KR";
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
     line-height: 140%;
     letter-spacing: -1.28px;

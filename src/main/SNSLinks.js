@@ -1,18 +1,15 @@
 import React from 'react';
+import kakao from '../img/kakao.png';
+import blog from '../img/blog.png';
+import insta from '../img/insta.png';
 import './SNSLinks.css';
 
 function SNSLinks() {
     return (
         <div className="sns-links lab">
-            <a href="https://blog.link" target="_blank" rel="noopener noreferrer" className="sns-button">
-                블로그
-            </a>
-            <a href="https://instagram.link" target="_blank" rel="noopener noreferrer" className="sns-button">
-                인스타
-            </a>
-            <a href="https://kakaotalk.link" target="_blank" rel="noopener noreferrer" className="sns-button">
-                카카오
-            </a>
+            <img src={kakao} alt="카카오 로고" className="sns-button" />
+            <img src={blog} alt="블로그 로고" className="sns-button" />
+            <img src={insta} alt="인스타 로고" className="sns-button" />
         </div>
     );
 }
