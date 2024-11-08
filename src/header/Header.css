@@ -19,7 +19,7 @@
 }
 
 .header-title {
-    margin-left: 24px;
+    margin-left: clamp(12px, 1.67vw, 24px);
     color: #000;
     font-size: 28px;
     font-weight: 600;
@@ -27,7 +27,7 @@
 }
 
 .header-nav {
-    margin-left: 400px;
+    margin-left: clamp(222px, 27.8vw, 400px);
     display: flex;
     align-items: center;
     gap: 32px;

@@ -1,13 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import useResponsiveWidth from '../hooks/useResponsiveWidth';
 import './Header.css';
 import mainLogo from '../img/main.png';
 
 function Header() {
     const navigate = useNavigate();
+    const responsiveWidth = useResponsiveWidth();
 
     return (
-        <header className="header">
+        <header className="header" style={{ width: responsiveWidth }}>
             <div className="header-container">
                 <div className="header-logo" onClick={() => navigate('/main')}>
                     <img src={mainLogo} alt="SGEE Logo" />

@@ -1,7 +1,8 @@
 .main-title {
-    margin-top: 160px;
     display: flex;
-    padding: 96px 96px 80px 96px;
+    padding: clamp(55px, 6.6vw, 96px);
+    padding-top: 96px;
+    padding-bottom : 80px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -29,10 +30,6 @@
     margin: 0;
 }
 
-.main-title .orange {
-    color: var(--MAIN, #ff6600);
-}
-
 .sini-section {
     display: flex;
     align-items: center;
@@ -41,8 +38,8 @@
 }
 
 .sini-image {
-    width: 122px;
-    height: 137px;
+    width: clamp(66px, 8.4vw, 122px);
+    height: clamp(66px, 8.4vw, 122px)*1.12;
 }
 
 .sini-section p {
@@ -51,4 +48,25 @@
     font-weight: 700;
     line-height: 140%;
     letter-spacing: -1.28px;
+}
+
+.application-consult {
+    margin-top: 106px;
+    display: flex;
+    padding: 20px clamp(28px, 3.6vw, 52px);
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--MAIN, #ff6600);
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 100%; /* 36px */
+    letter-spacing: -1.44px;
+}
+
+.main-title .orange {
+    color: var(--MAIN, #ff6600);
 }

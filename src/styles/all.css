@@ -1,0 +1,25 @@
+.lab {
+    border: 1px solid black; /* 크기 확인용 테두리 스타일 */
+    margin-top: 112px;
+}
+
+body {
+    font-family: "IBM Plex Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-title,
+.needed,
+.advantage {
+    opacity: 0;
+    transform: translateY(20px); /* 초기 위치 */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.main-title.visible,
+.needed.visible,
+.advantage.visible {
+    opacity: 1;
+    transform: translateY(0); /* 화면에 나타남 */
+}

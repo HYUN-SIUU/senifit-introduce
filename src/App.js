@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './header/Header';
 import Main from './pages/SGEE_Main_Web';
 import Sub1 from './pages/SGEE_Sub1_Intro(SGEE)';
 import Sub2 from './pages/SGEE_Sub2_Intro(SINI)';
@@ -11,7 +10,6 @@ function App() {
     return (
         <Router>
             <div style={{ width: '1440px', margin: '0 auto' }}>
-                <Header />
                 <Routes>
                     <Route path="/main" element={<Main />} />
                     <Route path="/sub1" element={<Sub1 />} />
