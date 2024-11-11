@@ -9,7 +9,7 @@ import Sub4 from './pages/SGEE_Sub4_Cont';
 function App() {
     return (
         <Router>
-            <div style={{ width: '1440px', margin: '0 auto' }}>
+            <div style={{ maxWidth: '1440px', margin: 'auto' }}>
                 <Routes>
                     <Route path="/main" element={<Main />} />
                     <Route path="/sub1" element={<Sub1 />} />

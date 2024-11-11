@@ -1,8 +1,7 @@
 .main-title {
+    position: relative;
     display: flex;
-    padding: clamp(55px, 6.6vw, 96px);
-    padding-top: 96px;
-    padding-bottom : 80px;
+    padding: 96px 120px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -10,11 +9,32 @@
     flex: 1 0 0;
 }
 
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .main-title {
+        padding: 32px; /* 800px 이하에서는 32px */
+    }
+}
+
 .main-title .h2 {
     color: #0D0D0D;
     font-size: 20px;
     line-height: normal;
     margin: 0;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .main-title .h2 {
+        font-size: 16px; /* 800px ~ 1270px에서는 16px */
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .main-title .h2 {
+        font-size: 12px; /* 800px 이하에서는 12px */
+    }
 }
 
 .main-title .twenty-two {
@@ -30,6 +50,20 @@
     margin: 0;
 }
 
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .main-title .h1 {
+        font-size: 32px; /* 800px ~ 1270px에서는 32px */
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .main-title .h1 {
+        font-size: 20px; /* 800px 이하에서는 20px */
+    }
+}
+
 .sini-section {
     display: flex;
     align-items: center;
@@ -38,8 +72,24 @@
 }
 
 .sini-image {
-    width: clamp(66px, 8.4vw, 122px);
-    height: clamp(66px, 8.4vw, 122px)*1.12;
+    width: 120px;
+    height: 130px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .sini-image {
+        width: 100px; /* 800px ~ 1270px에서는 100px */
+        height: 108px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .sini-image {
+        width: 80px; /* 800px ~ 1270px에서는 80px */
+        height: 88px;
+    }
 }
 
 .sini-section p {
@@ -50,10 +100,24 @@
     letter-spacing: -1.28px;
 }
 
-.application-consult {
-    margin-top: 106px;
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .sini-section p {
+        font-size: 56px; /* 800px ~ 1270px에서는 56px */
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .sini-section p {
+        font-size: 32px; /* 800px 이하에서는 32px */
+    }
+}
+
+.main-title .application-consult {
+    margin-top: 100px;
     display: flex;
-    padding: 20px clamp(28px, 3.6vw, 52px);
+    padding: 20px 52px;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -65,6 +129,33 @@
     font-weight: 500;
     line-height: 100%; /* 36px */
     letter-spacing: -1.44px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .main-title .application-consult {
+        margin-top: 50px;
+        font-size: 32px;
+        letter-spacing: -1.28px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .main-title .application-consult {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+        padding: 12px 24px;
+        font-size: 16px;
+        letter-spacing: -0.64px;
+    }
+}
+
+.main-title .application-consult:hover {
+    background-color: #e55a00; /* hover 시 약간 어두운 주황색 */
 }
 
 .main-title .orange {

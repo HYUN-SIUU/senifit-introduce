@@ -1,15 +1,10 @@
 import React from 'react';
-import useResponsiveWidth from '../hooks/useResponsiveWidth';
-import useScrollAnimation from '../hooks/useScrollAnimation';
 import siniImage from '../img/sini.png';
 import './02_MainTitle.css';
 
 function MainTitle() {
-    const responsiveWidth = useResponsiveWidth();
-    useScrollAnimation('main-title');
-
     return (
-        <div className="main-title lab" style={{ width: responsiveWidth }}>
+        <div className="main-title" style={{ marginTop: "160px" }}>
             <div>
                 <p className="h2">복지사님들과 어르신들의 피드백을 바탕으로 SGEE가 자체 개발한</p>
             </div>

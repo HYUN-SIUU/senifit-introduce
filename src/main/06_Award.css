@@ -1,0 +1,104 @@
+.award {
+    padding: 96px 120px;
+    text-align: center;
+}
+
+.award .title {
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%; /* 72px */
+    letter-spacing: -0.96px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .award .title {
+        font-size: 40px;
+        letter-spacing: -0.8px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .award .title {
+        font-size: 20px;
+        letter-spacing: -0.4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.video-container {
+    margin: 20px 0;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+.award-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.background-item {
+    position: relative;
+    width: 24%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.background-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.background-item .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .award-images .mobile {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .background-item {
+        width: 45%; /* 모바일 환경에서는 2x2 레이아웃 */
+    }
+
+    .background-item .overlay {
+        font-size: 10px;
+    }
+}

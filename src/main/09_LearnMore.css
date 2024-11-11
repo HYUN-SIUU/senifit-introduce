@@ -1,0 +1,78 @@
+.learn-more {
+    background: #FFD7AA;
+    text-align: center;
+    padding: 96px 120px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .learn-more {
+        padding: 141px 136px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .learn-more {
+        padding: 36px 32px;
+    }
+}
+
+.learn-more p {
+    color: #552D00;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%; /* 72px */
+    letter-spacing: -0.96px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .learn-more p {
+        font-size: 40px;
+        letter-spacing: -0.8px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .learn-more p {
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+}
+
+.learn-more-button {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 24px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: #804400;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 100%; /* 36px */
+    letter-spacing: -1.44px;
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .learn-more-button {
+        margin-top: 16px;
+        padding: 12px 16px;
+        font-size: 16px;
+        letter-spacing: -0.64px;
+    }
+}
+
+.learn-more-button:hover {
+    background-color: #4E3218; /* 호버 시 버튼 배경색 */
+}

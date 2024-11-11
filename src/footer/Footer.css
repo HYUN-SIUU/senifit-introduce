@@ -1,0 +1,30 @@
+.footer {
+    background: #554839;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 64px 80px;
+    text-align: left;
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .footer {
+        padding: 24px 32px;
+    }
+}
+
+.footer p {
+    color: #FFF;
+    font-family: "Noto Sans KR";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .footer p {
+        font-size: 10px;
+    }
+}

@@ -2,7 +2,7 @@
     display: flex;
     position: relative; 
     min-height: 810px;
-    padding: 0px clamp(33px, 3.8vw, 56px);
+    padding: 96px 120px;
     align-items: flex-start;
     align-content: flex-start;
     gap: 12px;
@@ -12,8 +12,15 @@
     color: #FFF;
     font-size: 20px;
     font-weight: 400;
-    line-height: 40%;
+    line-height: 60%;
     letter-spacing: -0.4px;
+}
+
+/* 화면 너비가 ~ 1270px일 때 */
+@media (max-width: 1270px) {
+    .advantage {
+        height: 1630px;
+    }
 }
 
 .frame86 p {
@@ -30,7 +37,7 @@
 }
 
 .frame106 .textbox {
-    width: clamp(166px, 20.8vw, 300px);
+    width: 300px;
     height: 400px;
     flex-shrink: 0;
     color: #000;
@@ -40,15 +47,24 @@
     letter-spacing: -0.96px;
 }
 
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .frame106 .textbox {
+        height: auto;
+        font-size: 20px;
+        letter-spacing: -0.4px;
+    }
+}
+
 .frame89 img {
     margin-top: 40px;
-    width: clamp(310px, 38.5vw, 555px);
+    width: 555px;
 }
 
 .frame80 img {
     margin-top: 24px;
-    width: clamp(75px, 9.3vw, 135px);
-    height: clamp(75px, 9.3vw, 135px)*0.92;
+    width: 135px;
+    height: 125px;
     margin-bottom: 12px;
 }
 
@@ -74,8 +90,4 @@
     line-height: 110%; /* 17.6px */
     letter-spacing: -0.32px;
     line-height: 80%;
-}
-
-.advantage .orange {
-    color: var(--MAIN, #ff6600);
 }

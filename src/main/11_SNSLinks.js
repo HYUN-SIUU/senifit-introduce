@@ -7,7 +7,7 @@ import './11_SNSLinks.css';
 function SNSLinks() {
 
     return (
-        <div className="sns-links lab">
+        <div className="sns-links">
             <img src={kakao} alt="카카오 로고" className="sns-button" />
             <img src={blog} alt="블로그 로고" className="sns-button" />
             <img src={insta} alt="인스타 로고" className="sns-button" />

@@ -1,14 +1,9 @@
 import React from 'react';
-import useResponsiveWidth from '../hooks/useResponsiveWidth';
-//import useScrollAnimation from '../hooks/useScrollAnimation';
 import './03_Needed.css';
 
 function Needed() {
-    const responsiveWidth = useResponsiveWidth();
-    //useScrollAnimation('needed');
-    
     return (
-        <div className="needed lab" style={{ width: responsiveWidth }}>
+        <div className="needed">
             <div className="title text-center">
                 <p className="h1">원장님, 이런&nbsp;<span className="orange">고민</span>&nbsp;있지 않으세요?</p>
             </div>

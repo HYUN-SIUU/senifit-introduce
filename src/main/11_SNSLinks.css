@@ -1,19 +1,32 @@
 .sns-links {
     position: fixed;
-    top: 500px;
-    right: 150px;
-    z-index: 1000;
+    top: 60vh;
+    right: 5vw;
+    z-index: 100;
     background-color: none;
     display: flex;
     flex-direction: column; /* 세로 방향으로 정렬 */
     align-items: center; /* 중앙 정렬 */
     gap: 10px; /* 버튼 간격 설정 */
     padding: 10px; /* 내부 여백 추가 */
-    border: 1px solid black; /* .lab 스타일로 테두리 추가 */
 }
 
 .sns-links img {
-    width: 70px;
+    width: 100px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .sns-links img {
+        width: 85px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .sns-links img {
+        width: 70px;
+    }
 }
 
 .sns-button {
