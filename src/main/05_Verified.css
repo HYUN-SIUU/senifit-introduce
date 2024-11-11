@@ -12,14 +12,14 @@
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .real {
-        padding: 64px 80px;
+        padding: 50px 50px;
     }
 }
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
     .real {
-        padding: 32px 40px;
+        padding: 36px 32px;
     }
 }
 
@@ -28,7 +28,7 @@
     text-align: center;
     font-size: 48px;
     font-weight: 700;
-    line-height: 150%; /* 60px */
+    line-height: 150%;
     letter-spacing: -0.96px;
     margin-bottom: 48px;
 }
@@ -104,7 +104,7 @@
     color: #000;
     font-size: 28px;
     font-weight: 700;
-    line-height: 150%; /* 42px */
+    line-height: 100%; 
     letter-spacing: -0.56px;
 }
 
@@ -112,7 +112,7 @@
     color: #000;
     font-size: 20px;
     font-weight: 300;
-    line-height: 150%; /* 30px */
+    line-height: 200%;
     letter-spacing: -0.4px;
 }
 
@@ -173,22 +173,31 @@
 .feedback2 {
     position: relative;
     width: 95%;
-    border: 1px solid black;
+    height: 200px;
+    border: 1px solid #fff;
     display: flex;
     padding: 36px 48px;
     justify-content: center;
     align-items: center;
     gap: 32px;
     flex-wrap: wrap;
-    border-radius: 60px;
+    border-radius: 50px;
     color: #000;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15); /* 말풍선 전체에 그림자 적용 */
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .feedback2 {
+        width: 90%;
+        height: 100px;
+    }
 }
 
 .feedback-img2 {
     position: absolute;
-    left: 48px;
-    width: 128px;
-    height: 128px;
+    left: 5%;
+    width: 13%;
     border-radius: 50%;
 }
 
@@ -201,18 +210,27 @@
     }
 }
 
+.feedback-text2 {
+    position: absolute;
+    left: 22%;
+    width: 73%;
+    border-radius: 50%;
+}
+
 .feedback-text2 p {
     align-self: stretch;
     font-size: 24px;
     font-weight: 700;
-    line-height: 150%; /* 36px */
+    line-height: 100%; 
     letter-spacing: -0.48px;
+    margin-bottom: 3px;
 }
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
     .feedback-text2 p {
         font-size: 14px;
+        line-height: 100%;
     }
 }
 
@@ -220,7 +238,7 @@
     align-self: stretch;
     font-size: 20px;
     font-weight: 300;
-    line-height: 150%; /* 30px */
+    line-height: 200%;
     letter-spacing: -0.4px;
 }
 

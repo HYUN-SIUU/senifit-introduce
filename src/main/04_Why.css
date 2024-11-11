@@ -1,93 +1,279 @@
-.advantage {
-    display: flex;
-    position: relative; 
-    min-height: 810px;
-    padding: 96px 120px;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 12px;
-    align-self: stretch;
-    flex-wrap: wrap;
-
+.why {
+    display: flex; flex-direction: column; justify-content: center; flex: 1 0 0;gap: 2vh;
+    padding: 0 56px;
     color: #FFF;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 60%;
-    letter-spacing: -0.4px;
+    margin-bottom: 112px;
 }
 
-/* 화면 너비가 ~ 1270px일 때 */
-@media (max-width: 1270px) {
-    .advantage {
-        height: 1630px;
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why {
+        padding: 50px 50px;
     }
-}
-
-.frame86 p {
-    font-size: 24px;
-    letter-spacing: -0.48px;
-}
-
-.advantage .h3 {
-    color: #FFF;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 80%;
-    letter-spacing: -0.48px;
-}
-
-.frame106 .textbox {
-    width: 300px;
-    height: 400px;
-    flex-shrink: 0;
-    color: #000;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 150%; /* 72px */
-    letter-spacing: -0.96px;
 }
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
-    .frame106 .textbox {
-        height: auto;
-        font-size: 20px;
-        letter-spacing: -0.4px;
+    .why {
+        padding: 36px 32px;
     }
 }
 
-.frame89 img {
-    margin-top: 40px;
-    width: 555px;
+.why .up, .why .down {
+    display: flex; gap: 2%;
+    width: 100%;
 }
 
-.frame80 img {
-    margin-top: 24px;
-    width: 135px;
-    height: 125px;
+.why p {
+    font-size: 24px; font-weight: 700; line-height: 125%; letter-spacing: -0.48px;
+    margin-bottom: 0;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why p {
+        font-size: 20px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why p {
+        font-size: 16px;
+    }
+}
+
+.why span {
+    font-size: 20px; font-weight: 400; line-height: 150%; letter-spacing: -0.4px;
+    margin-bottom: 0;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why span {
+        font-size: 17px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why span {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.why .title {
+    position: relative;
+    width: 49%; height: 400px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why .title {
+        width: 90%; height: 300px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why .title {
+        width: 90%; height: auto;
+        text-align: center;
+    }
+}
+
+.why .title p {
+    color: #000; font-size: 48px; font-weight: 700; line-height: 150%; letter-spacing: -0.96px;
+}
+
+.why .title span {
+    font-size: 48px; font-weight: 700; line-height: 150%; letter-spacing: -0.96px;
+} 
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why .title p, .why .title span {
+        font-size: 36px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why .title p, .why .title span {
+        font-size: 20px;
+    }
+}
+
+.why .title img {
+    position: absolute; right: 0; bottom: 0;
+    width: 55%;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why .title img {
+        width: 27%;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why .title img {
+        width: 27%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.why .first {
+    position: relative;
+    display: flex; flex-direction: column; justify-content: center; flex: 1 0 0;
+    width: 49%; height: 400px; padding: 48px 40px;
+    border-radius: 60px 60px 60px 0px;
+    background: #DD7600;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why .first {
+        width: 90%; height: 300px;
+        border-radius: 60px 60px 0px 0px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why .first {
+        width: 90%; height: 200px;
+        border-radius: 60px 60px 0px 0px;
+    }
+}
+
+.why .first img {
+    width: 100%; max-width: 600px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why .first img {
+        width: 60%; margin-left: 40%;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why .first img {
+        width: 60%; margin-left: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.why .second {
+    display: flex; flex-direction: column; justify-content: center; flex: 1 0 0;
+    width: 49%; height: 400px; padding: 48px 40px;
+    border-radius: 60px 0px 60px 60px;
+    background: #D58223;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why .second {
+        width: 90%; height: 300px;
+        border-radius: 0px 0px 0px 0px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why .second {
+        width: 90%; height: 200px;
+        border-radius: 0px 0px 0px 0px;
+    }
+}
+
+.why-imgs {
+    display: flex; justify-content: space-between; flex-wrap: wrap;
+    width: 100%;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why .second .why-imgs {
+        width: 60%; margin-left: 40%;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why .second .why-imgs {
+        width: 60%; margin-left: 40%;
+    }
+}
+
+.item {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    width: 24%;
+}
+
+.item img {
+    width: 100%; height: auto; max-width: 135px;
+    border-radius: 10px;
     margin-bottom: 12px;
 }
 
-.main-advantange-imgArray {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%; /* 전체 폭에 맞춤 */
+.item span {
+    color: #FFF; text-align: center; font-size: 16px; font-weight: 500; line-height: 110%; letter-spacing: -0.32px;
 }
 
-.main-advantange-imgArray2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+
+
+
+
+
+
+
+.why .third {
+    display: flex; flex-direction: column; justify-content: center; flex: 1 0 0;
+    width: 49%; height: 400px; padding: 48px 40px;
+    border-radius: 0px 60px 60px 60px;
+    background: #914D00;
 }
 
-.frame80 span {
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 110%; /* 17.6px */
-    letter-spacing: -0.32px;
-    line-height: 80%;
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why .third {
+        width: 90%; height: 300px;
+        border-radius: 0px 0px 60px 60px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why .third {
+        width: 90%; height: 200px;
+        border-radius: 0px 0px 60px 60px;
+    }
 }

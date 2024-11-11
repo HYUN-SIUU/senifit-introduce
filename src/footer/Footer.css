@@ -15,10 +15,10 @@
 .footer p {
     color: #FFF;
     font-family: "Noto Sans KR";
-    font-size: 20px;
+    font-size: 20px;    /* 글자 크기 */
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 100%;  /* 줄 사이 간격 */
     letter-spacing: -0.4px;
 }
 

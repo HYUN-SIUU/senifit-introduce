@@ -1,7 +1,52 @@
 .promotion {
-    background: #FFF5EA;
+    position: relative;
+    padding-top: 100%;
+    background-image: url('../img/promotion.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FFF5EA;
 }
 
-.promotion img {
-    width: 100%;
+.promotion .application-consult {
+    position: absolute;
+    top: 66%;
+    left: 39%;
+    display: inline-flex;
+    width: 22%;
+    padding: 20px 52px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--MAIN, #ff6600);
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -1.44px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .promotion .application-consult {
+        padding: 12px 24px;
+        font-size: 24px;
+        letter-spacing: -1.28px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .promotion .application-consult {
+        padding: 12px 24px;
+        font-size: 16px;    /* 글자 크기 */
+        letter-spacing: -0.64px;
+    }
+}
+
+.promotion .application-consult:hover {
+    background-color: #e55a00; /* 호버 시 버튼 배경색 */
 }
