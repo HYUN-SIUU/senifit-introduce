@@ -1,5 +1,5 @@
 .why {
-    display: flex; flex-direction: column; justify-content: center; flex: 1 0 0;gap: 2vh;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1 0 0; gap: 2vh; 
     padding: 0 56px;
     color: #FFF;
     margin-bottom: 112px;
@@ -175,10 +175,17 @@
     }
 }
 
-/* 화면 너비가 800px 이하일 때 */
-@media (max-width: 800px) {
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 800px) and (min-width: 500px) {
     .why .first img {
         width: 60%; margin-left: 40%;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 500px) {
+    .why .first img {
+        width: 70%; margin-left: 30%;
     }
 }
 
@@ -226,9 +233,16 @@
 }
 
 /* 화면 너비가 800px 이하일 때 */
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 500px) {
     .why .second .why-imgs {
         width: 60%; margin-left: 40%;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 500px) {
+    .why .second .why-imgs {
+        width: 70%; margin-left: 30%;
     }
 }
 
@@ -245,6 +259,20 @@
 
 .item span {
     color: #FFF; text-align: center; font-size: 16px; font-weight: 500; line-height: 110%; letter-spacing: -0.32px;
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) and (min-width: 500px) {
+    .why .second .item span {
+        font-size: 10px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 500px) {
+    .why .second .item span {
+        font-size: 8px;
+    }
 }
 
 

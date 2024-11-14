@@ -94,11 +94,20 @@
 }
 
 /* 화면 너비가 800px 이하일 때 */
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 500px) {
     .promotion .application-consult {
         padding: 12px 24px;
         font-size: 12px;
         letter-spacing: -0.64px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 500px) {
+    .promotion .application-consult {
+        padding: 10px 20px;
+        font-size: 10px;
+        letter-spacing: -0.48px;
     }
 }
 
