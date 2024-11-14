@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './04_Why.css';
-import Sini from '../img/sini.png';
-import Medic from '../img/medic.png';
-import Image from '../img/image.png';
+import SiniTrans from '../img/sini-trans.png';
+import Medic from '../img/04_medic.png';
+import Image1 from '../img/04_why1.png';
+import Image2 from '../img/04_why2.png';
+import Image3 from '../img/04_why3.png';
+import Image4 from '../img/04_why4.png';
 
 function Why() {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1270);
@@ -29,7 +32,7 @@ function Why() {
                         <p>그럼,&nbsp;<span className="orange">왜</span></p>
                         <p>‘시니핏’이어야</p>
                         <p>할까요?</p>
-                        <img src={Sini} alt="sini" />
+                        <img src={SiniTrans} alt="sini" />
                     </div>
                     <div className="first">
                         <p>의학 기반으로 4가지 테마로</p>
@@ -49,22 +52,22 @@ function Why() {
                         <br/>
                         <div className="why-imgs">
                             <div className="item">
-                                <img src={Image} alt="advan_medic" />
+                                <img src={Image1} alt="advan_medic" />
                                 <span>스포츠</span>
                                 <span>학습</span>
                             </div>
                             <div className="item">
-                                <img src={Image} alt="advan_medic" />
+                                <img src={Image2} alt="advan_medic" />
                                 <span>스포츠</span>
                                 <span>실습</span>
                             </div>
                             <div className="item">
-                                <img src={Image} alt="advan_medic" />
+                                <img src={Image3} alt="advan_medic" />
                                 <span>인지향상</span>
                                 <span>기합게임</span>
                             </div>
                             <div className="item">
-                                <img src={Image} alt="advan_medic" />
+                                <img src={Image4} alt="advan_medic" />
                                 <span>노래스포츠</span>
                                 <span>체조</span>
                             </div>
@@ -93,7 +96,7 @@ function Why() {
                             <p>그럼,&nbsp;<span className="orange">왜</span></p>
                             <p>‘시니핏’이어야</p>
                             <p>할까요?</p>
-                            <img src={Sini} alt="sini" />
+                            <img src={SiniTrans} alt="sini" />
                         </div>
                     )}
                     <div className="first">
@@ -112,22 +115,22 @@ function Why() {
                         <br/>
                         <div className="why-imgs">
                             <div className="item">
-                                <img src={Image} alt="advan_medic" />
+                                <img src={Image1} alt="advan_medic" />
                                 <span>스포츠</span>
                                 <span>학습</span>
                             </div>
                             <div className="item">
-                                <img src={Image} alt="advan_medic" />
+                                <img src={Image2} alt="advan_medic" />
                                 <span>스포츠</span>
                                 <span>실습</span>
                             </div>
                             <div className="item">
-                                <img src={Image} alt="advan_medic" />
+                                <img src={Image3} alt="advan_medic" />
                                 <span>인지향상</span>
                                 <span>기합게임</span>
                             </div>
                             <div className="item">
-                                <img src={Image} alt="advan_medic" />
+                                <img src={Image4} alt="advan_medic" />
                                 <span>노래스포츠</span>
                                 <span>체조</span>
                             </div>

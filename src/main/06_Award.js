@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './06_Award.css';
-import videoFile from '../img/image.png'; // 비디오 파일의 임시 이름 설정
-import bgImage from '../img/image.png'; // 배경 이미지 파일
+import videoFile from '../img/06_award.MOV';
+import bgImage1 from '../img/06_award1.png';
+import bgImage2 from '../img/06_award2.png';
+import bgImage3 from '../img/06_award3.png';
 
 function Award() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
@@ -16,6 +18,7 @@ function Award() {
     }, []);
 
     return (
+        <>
         <div className="award">
             {/* 제목 */}
             <h2 className="title">
@@ -29,33 +32,26 @@ function Award() {
                     해당 브라우저는 동영상을 지원하지 않습니다.
                 </video>
             </div>
-
-            {/* 배경 사진 영역 */}
-            {isMobile ? (
+        </div>
+        {/* 배경 사진 영역 */}
+        {isMobile ? (
                 <div className="award-images mobile">
                     <div className="background-item">
-                        <img src={bgImage} alt="배경 이미지 1" />
+                        <img src={bgImage1} alt="배경 이미지 1" />
                         <div className="overlay">
                             <p>[수상] 우수상에 선정된 예비 창업가 ‘시니핏’팀 ...</p>
                             <span>출처 : 아뉴스투데이</span>
                         </div>
                     </div>
                     <div className="background-item">
-                        <img src={bgImage} alt="배경 이미지 2" />
+                        <img src={bgImage2} alt="배경 이미지 2" />
                         <div className="overlay">
                             <p>[수상] 우수상에 선정된 예비 창업가 ‘시니핏’팀 ...</p>
                             <span>출처 : 아뉴스투데이</span>
                         </div>
                     </div>
                     <div className="background-item">
-                        <img src={bgImage} alt="배경 이미지 3" />
-                        <div className="overlay">
-                            <p>[수상] 우수상에 선정된 예비 창업가 ‘시니핏’팀 ...</p>
-                            <span>출처 : 아뉴스투데이</span>
-                        </div>
-                    </div>
-                    <div className="background-item">
-                        <img src={bgImage} alt="배경 이미지 4" />
+                        <img src={bgImage3} alt="배경 이미지 3" />
                         <div className="overlay">
                             <p>[수상] 우수상에 선정된 예비 창업가 ‘시니핏’팀 ...</p>
                             <span>출처 : 아뉴스투데이</span>
@@ -65,28 +61,21 @@ function Award() {
             ) : (
                 <div className="award-images desktop">
                     <div className="background-item">
-                        <img src={bgImage} alt="배경 이미지 1" />
+                        <img src={bgImage1} alt="배경 이미지 1" />
                         <div className="overlay">
                             <p>[수상] 우수상에 선정된 예비 창업가 ‘시니핏’팀 ...</p>
                             <span>출처 : 아뉴스투데이</span>
                         </div>
                     </div>
                     <div className="background-item">
-                        <img src={bgImage} alt="배경 이미지 2" />
+                        <img src={bgImage2} alt="배경 이미지 2" />
                         <div className="overlay">
                             <p>[수상] 우수상에 선정된 예비 창업가 ‘시니핏’팀 ...</p>
                             <span>출처 : 아뉴스투데이</span>
                         </div>
                     </div>
                     <div className="background-item">
-                        <img src={bgImage} alt="배경 이미지 3" />
-                        <div className="overlay">
-                            <p>[수상] 우수상에 선정된 예비 창업가 ‘시니핏’팀 ...</p>
-                            <span>출처 : 아뉴스투데이</span>
-                        </div>
-                    </div>
-                    <div className="background-item">
-                        <img src={bgImage} alt="배경 이미지 4" />
+                        <img src={bgImage3} alt="배경 이미지 3" />
                         <div className="overlay">
                             <p>[수상] 우수상에 선정된 예비 창업가 ‘시니핏’팀 ...</p>
                             <span>출처 : 아뉴스투데이</span>
@@ -94,7 +83,7 @@ function Award() {
                     </div>
                 </div>
             )}
-        </div>
+        </>
     );
 }
 

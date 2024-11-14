@@ -120,14 +120,14 @@
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .why .title img {
-        width: 27%;
+        width: 30%;
     }
 }
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
     .why .title img {
-        width: 27%;
+        width: 30%;
     }
 }
 

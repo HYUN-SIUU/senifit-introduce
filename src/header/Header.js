@@ -23,7 +23,7 @@ function Header() {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <header className="header">
+        <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
             {!isLargeScreen ? (
                 menuOpen ? (
                     <div className="hamburger-menu">
@@ -36,13 +36,14 @@ function Header() {
                         <button className="close-menu" onClick={toggleMenu}></button>
                     </div>
                 ) : (
-                    <nav className="navbar navbar-white bg-white">
                         <div className="header-container">
-                            <div className="header-logo" onClick={() => navigate('/main')}>
-                                <img src={mainLogo} alt="SGEE Logo" />
-                            </div>
-                            <div className="header-title">
-                                <p>한국노인단체운동전문가협회</p>
+                            <div className="header-nav-0">
+                                <div className="header-logo" onClick={() => navigate('/main')}>
+                                    <img src={mainLogo} alt="SGEE Logo" />
+                                </div>
+                                <div className="header-title">
+                                    <p>한국노인단체운동전문가협회</p>
+                                </div>
                             </div>
                             <button 
                                 className="navbar-toggler" 
@@ -57,15 +58,17 @@ function Header() {
                                 <span className="navbar-toggler-icon"></span>
                             </button>
                         </div>
-                    </nav>
+                    
                 )
             ) : (
                 <div className="header-container">
-                    <div className="header-logo" onClick={() => navigate('/main')}>
-                        <img src={mainLogo} alt="SGEE Logo" />
-                    </div>
-                    <div className="header-title">
-                        <p>한국노인단체운동전문가협회</p>
+                    <div className="header-nav-0">
+                        <div className="header-logo" onClick={() => navigate('/main')}>
+                            <img src={mainLogo} alt="SGEE Logo" />
+                        </div>
+                        <div className="header-title">
+                            <p>한국노인단체운동전문가협회</p>
+                        </div>
                     </div>
                     <nav className="header-nav">
                         <button onClick={() => navigate('/sub1')}>SGEE 소개</button>

@@ -4,7 +4,7 @@ import './02_MainTitle.css';
 
 function MainTitle() {
     return (
-        <div className="main-title" style={{ marginTop: "160px" }}>
+        <div className="main-title">
             <div>
                 <p className="h2">복지사님들과 어르신들의 피드백을 바탕으로 SGEE가 자체 개발한</p>
             </div>

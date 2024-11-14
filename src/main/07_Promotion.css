@@ -1,6 +1,61 @@
+.promotion-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF5EA;
+    height: 96px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .promotion-title {
+        height: 72px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .promotion-title {
+        height: 30px;
+    }
+}
+
+.promotion-title p {
+    color: #000;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -1.28px;
+    margin-top: 11%;
+    margin-bottom: 0;
+    z-index: 50;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .promotion-title p {
+       font-size: 48px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .promotion-title p {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
 .promotion {
     position: relative;
-    padding-top: 100%;
+    padding-top: 70%;
     background-image: url('../img/promotion.png');
     background-size: contain;
     background-position: center;
@@ -10,7 +65,7 @@
 
 .promotion .application-consult {
     position: absolute;
-    top: 66%;
+    top: 72%;
     left: 39%;
     display: inline-flex;
     width: 22%;
@@ -42,7 +97,7 @@
 @media (max-width: 800px) {
     .promotion .application-consult {
         padding: 12px 24px;
-        font-size: 16px;    /* 글자 크기 */
+        font-size: 12px;
         letter-spacing: -0.64px;
     }
 }

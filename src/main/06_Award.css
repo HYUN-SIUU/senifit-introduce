@@ -1,19 +1,19 @@
 .award {
-    padding: 96px 120px;
+    padding: 96px 120px 48px 120px;
     text-align: center;
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .award {
-        padding: 50px 50px;
+        padding: 50px 50px 25px 50px;
     }
 }
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
     .award {
-        padding: 36px 32px;
+        padding: 36px 32px 18px 32px;
     }
 }
 
@@ -79,7 +79,7 @@
 
 .background-item {
     position: relative;
-    width: 24%;
+    width: 33%;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -97,22 +97,34 @@
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px;
-    font-size: 12px;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 500;
+    letter-spacing: -0.4px;
     text-align: left;
+}
+
+.background-item .overlay span {
+    font-weight: 300;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .background-item .overlay {
+        font-size: 16px;
+        letter-spacing: -0.3px;
+    }
 }
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
-    .award-images .mobile {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .background-item .overlay p {
+        font-size: 14px;
+        letter-spacing: -0.28px;
     }
 
-    .background-item {
-        width: 45%; /* 모바일 환경에서는 2x2 레이아웃 */
-    }
-
-    .background-item .overlay {
-        font-size: 10px;
+    .background-item .overlay span {
+        font-size: 12px;
+        letter-spacing: -0.24px;
     }
 }
