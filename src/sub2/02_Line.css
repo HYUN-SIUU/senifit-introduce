@@ -1,0 +1,85 @@
+.line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    background: #FF8A00;
+    padding: 56px 0;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .line {
+        margin-top: 96px;
+        padding: 44px 0;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .line {
+        margin-top: 84px;
+        padding: 32px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.line img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+    .line img {
+        width: 210px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 800px) {
+    .line img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.line p {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: -0.96px;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+    .line p {
+        font-size: 32px;
+        letter-spacing: -0.64px;
+    }
+}
+
+@media (max-width: 800px) {
+    .line p {
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+}

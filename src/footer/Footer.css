@@ -18,7 +18,7 @@
     font-size: 20px;    /* 글자 크기 */
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;  /* 줄 사이 간격 */
+    line-height: 200%;  /* 줄 사이 간격 */
     letter-spacing: -0.4px;
 }
 

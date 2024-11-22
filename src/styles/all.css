@@ -12,3 +12,7 @@ body {
 .orange {
     color: var(--MAIN, #ff6600);
 }
+
+p {
+    margin-bottom: 0;
+}

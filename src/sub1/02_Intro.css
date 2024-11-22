@@ -1,0 +1,159 @@
+.intro {
+    width: 100%;
+    padding: 48px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .intro {
+        margin-top: 96px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .intro {
+        margin-top: 84px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.intro .up {
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+    .intro .up {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 800px) {
+    .intro .up {
+        font-size: 12px;
+    }
+}
+
+.intro .down {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .intro .down {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.intro .down .image-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .down .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .intro .down .image-container {
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.intro .down .text-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.intro .down .text-container p {
+    color: #000;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: -0.56px;
+}
+
+.intro .down .text-container p:first-child {
+    font-size: 32px;
+    font-weight: 600;
+    
+}
+
+.intro .down .text-container p:last-child {
+    font-weight: 500;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+    .intro .down .text-container p {
+        font-size: 20px;
+        letter-spacing: -0.48px;
+    }
+    
+    .intro .down .text-container p:first-child {
+        font-size: 28px;        
+    }
+}
+
+
+@media (max-width: 800px) {
+    .intro .down .text-container {
+        width: 100%;
+    }
+
+    .intro .down .text-container p {
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+    
+    .intro .down .text-container p:first-child {
+        font-size: 24px;        
+    }
+}
