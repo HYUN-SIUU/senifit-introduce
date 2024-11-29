@@ -5,7 +5,6 @@
     top: 0;
     z-index: 200;
     background-color: #ffffff;
-    box-sizing: border-box;
 }
 
 .header.menu-open {

@@ -1,7 +1,8 @@
 .sns-links {
+    width: 10%;
     position: fixed;
     top: 60vh;
-    right: 5vw;
+    right: 10vw;
     z-index: 100;
     background-color: none;
     display: flex;
