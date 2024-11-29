@@ -16,7 +16,7 @@ function Why() {
         const handleResize = () => {
             setIsLargeScreen(window.innerWidth > 1270);
             setIsMobile(window.innerWidth <= 800);
-            setMedicSrc(window.innerWidth <= 800 ? Medic2 : Medic);
+            setMedicSrc(isMobile ? Medic2 : Medic);
         };
 
         window.addEventListener('resize', handleResize);
