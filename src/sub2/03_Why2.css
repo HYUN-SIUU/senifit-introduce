@@ -229,8 +229,8 @@
 
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 800px) {
-    .why .first img {
-        width: 80%; margin-left: 10%;
+    .why2 .first img {
+        width: 100%; margin: 0;
     }
 }
 
@@ -279,7 +279,7 @@
 @media (max-width: 800px) {
     .why2 .second .why-imgs {
         width: 100%; 
-        display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px;
+        display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px;
     }
 }
 
@@ -379,6 +379,13 @@
 @media (max-width: 800px) and (min-width: 500px) {
     .why2 .count {
         font-size: 28px; margin-bottom: 16px; letter-spacing: -0.64px;
+        border-bottom: 4px solid black;
+    }
+}
+
+@media (max-width: 500px) {
+    .why2 .count {
+        font-size: 24px; margin-bottom: 12px; letter-spacing: -0.64px;
         border-bottom: 4px solid black;
     }
 }

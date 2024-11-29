@@ -146,6 +146,19 @@
 
 .member .member-info {
     z-index: 10;
+    margin-top: 60px;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+    .member .member-info {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .member .member-info {
+        margin-top: 15px;
+    }
 }
 
 

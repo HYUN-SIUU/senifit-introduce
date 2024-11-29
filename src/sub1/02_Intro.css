@@ -155,11 +155,11 @@
     }
 
     .intro .down .text-container p {
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: -0.32px;
     }
     
     .intro .down .text-container p:first-child {
-        font-size: 24px;        
+        font-size: 22px;        
     }
 }

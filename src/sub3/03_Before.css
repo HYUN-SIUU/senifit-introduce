@@ -96,5 +96,6 @@
 @media (max-width: 800px) {
     .before .down .back1 {
         width: 90%;
+        margin-left: 5%;
     }
 }

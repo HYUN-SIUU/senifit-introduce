@@ -176,9 +176,9 @@
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 0) {
     .why .first img {
-        width: 80%; margin-left: 10%;
+        width: 100%; margin: 0;
     }
 }
 
@@ -229,7 +229,7 @@
 @media (max-width: 800px) {
     .why .second .why-imgs {
         width: 100%; 
-        display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5px;
+        display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px;
     }
 }
 
