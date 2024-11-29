@@ -78,7 +78,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-right: 4%;
 }
 
 /* .process::before {
@@ -93,17 +92,13 @@
 } */
 
 .mass {
-    width: 30%;
+    width: 25%;
     height: 30%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     z-index: 2;
-}
-
-.mass-text {
-    width: 25%;
 }
 
 .mass .circle-brown {
@@ -117,7 +112,7 @@
     background: var(--SUB, #804400);
     color: #FFF;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 110%;
     letter-spacing: -0.56px;
@@ -134,7 +129,7 @@
     background: var(--SUB, #fff);
     color: #804400;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 110%;
     letter-spacing: -0.56px;
@@ -151,7 +146,7 @@
     background: var(--SUB, #FF8A00);
     color: #FFF;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 110%;
     letter-spacing: -0.56px;
@@ -168,7 +163,7 @@
     background: var(--SUB, #FFF);
     color: #FF8A00;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 110%;
     letter-spacing: -0.56px;
@@ -176,7 +171,7 @@
 
 .circle-text {
     color: var(--SUB, #804400);
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 125%;
     letter-spacing: -0.52px;
@@ -184,7 +179,7 @@
 
 @media (max-width: 1270px) and (min-width: 800px) {
     .mass .circle-brown, .mass .circle-brown-2, .mass .circle-orange, .mass .circle-orange-2, .circle-text {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
         line-height: 110%;
         letter-spacing: -0.48px;
@@ -203,7 +198,7 @@
 
 @media (max-width: 500px) {
     .mass .circle-brown, .mass .circle-brown-2, .mass .circle-orange, .mass .circle-orange-2, .circle-text {
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 500;
         line-height: 110%;
         letter-spacing: -0.24px;
