@@ -10,13 +10,11 @@ import Image4 from '../img/04_why4.png';
 function Why() {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1270);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
-    const [medicSrc, setMedicSrc] = useState(Medic);
 
     useEffect(() => {
         const handleResize = () => {
             setIsLargeScreen(window.innerWidth > 1270);
             setIsMobile(window.innerWidth <= 800);
-            setMedicSrc(isMobile ? Medic2 : Medic);
         };
 
         window.addEventListener('resize', handleResize);
@@ -102,7 +100,12 @@ function Why() {
                         <br/>
                         <span>어르신들의 신체 능력 향상을 위해 체계적으로 운동을 진행합니다.</span>
                         <br/><br/>
-                        <img src={medicSrc} alt="medic" />
+
+                        {isMobile ? (
+                            <img src={Medic2} alt="의학 사진" />
+                        ) : (
+                            <img src={Medic} alt="의학 사진" />
+                        )}
                     </div>
                     <div className="second">
                         <div className="count">02</div>
