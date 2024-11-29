@@ -2,6 +2,7 @@ import React from "react";
 import in1 from '../img/sub4_02_Inquire1.png';
 import in2 from '../img/sub4_02_Inquire2.png';
 import in3 from '../img/sub4_02_Inquire3.png';
+import "../styles/all.css"
 import "./02_Inquire.css";
 
 function Inquire() {

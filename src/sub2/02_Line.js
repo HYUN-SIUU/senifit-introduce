@@ -1,5 +1,6 @@
 import React from 'react';
 import sini from '../img/sini_white.png';
+import "../styles/all.css"
 import './02_Line.css';
 
 function Line() {

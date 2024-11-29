@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../styles/all.css"
 import './03_Needed.css';
 
 function Needed() {

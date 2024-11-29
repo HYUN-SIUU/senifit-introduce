@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "../styles/all.css"
 import "./03_Before.css";
 
 function Before() {

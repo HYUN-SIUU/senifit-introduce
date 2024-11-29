@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/all.css"
 import "./02_Intro.css";
 import sgeeLogo from "../img/main.png"; // 이미지 파일 경로에 맞게 수정
 

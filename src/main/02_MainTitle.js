@@ -1,5 +1,6 @@
 import React from 'react';
 import siniImage from '../img/sini.png';
+import "../styles/all.css"
 import './02_MainTitle.css';
 
 function MainTitle() {

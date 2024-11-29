@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "../styles/all.css"
 import './03_Why2.css';
 import Medic from '../img/04_medic.png';
 import Medic2 from '../img/04_medic2.png';

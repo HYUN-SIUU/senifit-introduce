@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import "../styles/all.css"
 import './09_LearnMore.css';
 
 function LearnMore() {

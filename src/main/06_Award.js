@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../styles/all.css"
 import './06_Award.css';
 import videoFile from '../img/06_award.MOV';
 import bgImage1 from '../img/06_award1.jpg';

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import "../styles/all.css"
 import './03_Member.css';
 import member1 from '../img/sub1_03_member1.png';
 import member2 from '../img/sub1_03_member2.png';
