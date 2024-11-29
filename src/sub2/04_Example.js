@@ -1,7 +1,4 @@
 import React from 'react';
-import Image1 from '../img/03_need1.JPG';
-import Image2 from '../img/03_need2.JPG';
-import Image3 from '../img/03_need3.JPG';
 import './04_Example.css';
 
 function Example() {
@@ -12,17 +9,24 @@ function Example() {
             </div>
             <div className="example-box">
                 <div className="box1">
-                    <img src={Image1} alt="image1" />
+                    <div className="image1 img"></div>
                     <div className="image-box">
-                        <img src={Image2} alt="image2" />
-                        <img src={Image3} alt="image3" />
+                        <div className="image2"></div>
+                        <div className="image3"></div>
                     </div>
                 </div>
                 <div className="box2">
-                    <img src={Image1} alt="image1" />
+                    <div className="image4 img"></div>
                     <div className="image-box">
-                        <img src={Image2} alt="image2" />
-                        <img src={Image3} alt="image3" />
+                        <div className="image5"></div>
+                        <div className="image6"></div>
+                    </div>
+                </div>
+                <div className="box1">
+                    <div className="image7 img"></div>
+                    <div className="image-box">
+                        <div className="image8"></div>
+                        <div className="image9"></div>
                     </div>
                 </div>
             </div>

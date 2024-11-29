@@ -24,28 +24,27 @@ function Needed() {
                         <p>어르신들의 낙상 사고는</p>
                         <p>생각만해도 끔찍해요.</p>
                         <br/>
-                        <p className="orange">하체 운동을 시켜주고 싶은데</p>
-                        <p className="orange">운동 프로그램이 마땅치 않아요.</p>
+                        <p className="orange">낙상 방지를 위해</p>
+                        <p className="orange">운동을 시켜주고 싶은데</p>
+                        <p className="orange">기존 낙상 방지 운동 기구는 너무 비싸요</p>
                     </div>
                 </div>
                 <div className="second">
                     <div className="textbox">
-                        <p>어르신들을 위해서 운동 프로그램을 </p>
-                        <p>도입했는데 운동 효과는 모르겠어요.</p>
+                        <p>어르신들을 위해서 체조를 진행하고 있는데</p>
+                        <p>운동 효과가 있는지 모르겠어요.</p>
                         <br/>
-                        <p>상체운동은 저희도 영상보고</p>
-                        <p>할 수 있지만</p>
-                        <p className="orange">하체운동은 정보가 적고 어려워요.</p>
+                        <p>낙상 방지를 위한 다리 운동은</p>
+                        <p className="orange">정보도 없고 위험할 것 같아요.</p>
                     </div>
                 </div>
                 <div className="third">
                     <div className="textbox">
-                        <p>어르신들에게 운동을 시켜도</p>
-                        <p>재미가 없으면 하질 않으세요.</p>
+                        <p>어르신들을 위해 강사를 초빙하는데</p>
+                        <p>실제로 효과가 있으면 좋겠어요.</p>
                         <br/>
-                        <p>운동 효과 뿐만 아니라</p>
-                        <p className="orange">재미도 있는</p>
-                        <p className="orange">운동 프로그램을 도입하고 싶어요.</p>
+                        <p className="orange">안전하고 재밌게 운동하면서</p>
+                        <p className="orange">효과도 볼 수 있는 프로그램이 있으면 좋겠어요.</p>
                     </div>
                 </div>
             </div>

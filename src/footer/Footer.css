@@ -15,16 +15,32 @@
 .footer p {
     color: #FFF;
     font-family: "Noto Sans KR";
-    font-size: 20px;    /* 글자 크기 */
-    font-style: normal;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 200%;  /* 줄 사이 간격 */
+    line-height: normal;
     letter-spacing: -0.4px;
 }
+
+.footer .footer-email {
+    color: #FFF;
+    font-family: "Noto Sans KR";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
     .footer p {
         font-size: 10px;
+        letter-spacing: -0.2px;
     }
 }

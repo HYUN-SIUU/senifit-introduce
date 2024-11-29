@@ -26,7 +26,7 @@
 .real .title {
     color: #000;
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 150%;
     letter-spacing: -0.96px;
@@ -101,7 +101,7 @@
     background-color: #fff;
     border: 1px solid #fff;
     border-radius: 50px;
-    padding: 40px;
+    padding: 35px 55px;
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15); /* 말풍선 전체에 그림자 적용 */
 }
 
@@ -109,7 +109,7 @@
     color: #000;
     font-size: 24px;
     font-weight: 700;
-    line-height: 100%; 
+    line-height: 150%; 
     letter-spacing: -0.56px;
 }
 
@@ -121,10 +121,10 @@
     letter-spacing: -0.4px;
 }
 
-.feedback-text1::after {
+/* .feedback-text1::after {
     content: "";
     position: absolute;
-    top: 40%; /* 말풍선 꼬리의 세로 위치 */
+    top: 40%;
     transform: translateY(-50%);
     width: 0;
     height: 0;
@@ -137,7 +137,7 @@
     border-width: 30px 35px 30px 0;
     border-color: transparent #fff transparent transparent;
     border-radius: 5px;
-    filter: drop-shadow(-5px 3px 8px rgba(0, 0, 0, 0.15)); /* 삼각형에 그림자 추가 */
+    filter: drop-shadow(-5px 3px 8px rgba(0, 0, 0, 0.15));
 }
 
 .feedback1:last-child .feedback-text1::after {
@@ -145,8 +145,8 @@
     border-width: 30px 0 30px 35px;
     border-color: transparent transparent transparent #fff;
     border-radius: 5px;
-    filter: drop-shadow(5px 3px 8px rgba(0, 0, 0, 0.15)); /* 삼각형에 그림자 추가 */
-}
+    filter: drop-shadow(5px 3px 8px rgba(0, 0, 0, 0.15));
+} */
 
 
 
@@ -168,15 +168,13 @@
 }
 
 .feedback2 {
-    position: relative;
     width: 95%;
     height: 200px;
     border: 1px solid #fff;
     display: flex;
-    padding: 36px 48px;
-    justify-content: center;
+    padding: 0 48px;
+    justify-content: space-between;
     align-items: center;
-    gap: 32px;
     flex-wrap: wrap;
     border-radius: 50px;
     color: #000;
@@ -187,58 +185,26 @@
 @media (max-width: 800px) {
     .feedback2 {
         width: 90%;
-        height: 100px;
+        height: 111px;
+        padding: 0 24px;
     }
 }
 
 .feedback-img2 {
-    position: absolute;
-    left: 5%;
-    width: 13%;
+    width: 15%;
     border-radius: 50%;
-}
-
-/* 화면 너비가 800px 이하일 때 */
-@media (max-width: 800px) {
-    .feedback-img2 {
-        left: 24px;
-        width: 64px;
-        height: 64px;
-    }
 }
 
 .feedback-text2 {
-    position: absolute;
-    left: 22%;
-    width: 73%;
+    width: 75%;
     border-radius: 50%;
-}
-
-/* 화면 너비가 800px 이하일 때 */
-@media (max-width: 800px) and (min-width: 500px) {
-    .feedback-text2 {
-        position: absolute;
-        left: 25%;
-        width: 72%;
-        border-radius: 50%;
-    }
-}
-
-/* 화면 너비가 800px 이하일 때 */
-@media (max-width: 500px) {
-    .feedback-text2 {
-        position: absolute;
-        left: 30%;
-        width: 70%;
-        border-radius: 50%;
-    }
+    text-align: left;
 }
 
 .feedback-text2 p {
-    align-self: stretch;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 700;
-    line-height: 100%; 
+    line-height: 150%; 
     letter-spacing: -0.48px;
     margin-bottom: 3px;
 }
@@ -246,8 +212,7 @@
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) and (min-width: 500px) {
     .feedback-text2 p {
-        font-size: 14px;
-        line-height: 100%;
+        font-size: 12px;
     }
 }
 
@@ -255,12 +220,11 @@
 @media (max-width: 500px) {
     .feedback-text2 p {
         font-size: 10px;
-        line-height: 100%;
+        letter-spacing: -0.24px;
     }
 }
 
 .feedback-text2 span {
-    align-self: stretch;
     font-size: 20px;
     font-weight: 300;
     line-height: 200%;
@@ -278,6 +242,7 @@
 @media (max-width: 500px) {
     .feedback-text2 span {
         font-size: 8px;
+        letter-spacing: -0.24px;
     }
 }
 
@@ -291,29 +256,52 @@
 
 
 .real-images {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: stretch;
+    background-size: cover;
     background-color: #FBF9F8;
 }
 
 
-.real-images img {
+.real-images div {
     width: 33%;
     height: 400px;
 }
 
+.real-images .background-img1 {
+    background-image: url('../img/05_verify1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.real-images .background-img2 {
+    background-image: url('../img/05_verify2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.real-images .background-img3 {
+    background-image: url('../img/05_verify3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
-    .real-images img {
+    .real-images div {
         height: 350px;
     }
 }
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
-    .real-images img {
+    .real-images div {
         height: 300px;
     }
 }

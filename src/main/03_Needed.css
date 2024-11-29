@@ -33,7 +33,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* 화면 너비가 800px 이하일 때 */
@@ -46,7 +46,7 @@
 .needed .title p {
     color: #000;
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 150%;
     letter-spacing: -0.96px;
@@ -94,21 +94,21 @@
 }
 
 .rise .first {
-    background-image: url('../img/03_need1.JPG');
+    background-image: url('../img/03_need1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .rise .second {
-    background-image: url('../img/03_need2.JPG');
+    background-image: url('../img/03_need2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .rise .third {
-    background-image: url('../img/03_need3.JPG');
+    background-image: url('../img/03_need3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,21 +137,21 @@
 }
 
 .run .first {
-    background-image: url('../img/03_need1.JPG');
+    background-image: url('../img/03_need1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .run .second {
-    background-image: url('../img/03_need2.JPG');
+    background-image: url('../img/03_need2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .run .third {
-    background-image: url('../img/03_need3.JPG');
+    background-image: url('../img/03_need3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -184,7 +184,7 @@
 }
 
 .needed .textbox .orange {
-    color: var(--MAIN, #ff6600);
+    color: var(--MAIN, #FF8A00);
     font-weight: 700;
 }
 

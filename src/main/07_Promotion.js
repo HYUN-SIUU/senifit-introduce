@@ -12,7 +12,7 @@ function Promotion() {
             </div>
             <div className="promotion">
                 <div className="application-consult" onClick={() => navigate('/sub4')}>
-                    상담신청→
+                    상담신청 →
                 </div>
             </div>
         </>

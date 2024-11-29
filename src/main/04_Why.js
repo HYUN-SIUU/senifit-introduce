@@ -47,8 +47,8 @@ function Why() {
                     <div className="second">
                         <p>스포츠 프로그램을 통해 재미를 더했습니다.</p>
                         <br/>
-                        <span>태권도, 복싱 등 비전통적인 스포츠 접근을 통해</span>
-                        <span>어르신들의 흥미를 이끌어냅니다.</span>
+                        <span>태권도, 복싱 등을 비롯하여 새로운 스포츠 접근을 통해</span>
+                        <span>어르신들의 흥미를 이끕니다.</span>
                         <br/>
                         <div className="why-imgs">
                             <div className="item">
@@ -77,8 +77,8 @@ function Why() {
                         <p>교구를 통해 어르신들의 운동의 강도를</p>
                         <p>맞춤으로 조절합니다.</p>
                         <br/><br/>
-                        <span>의학 기반 테마에 맞춰 교구 4가지를 활용하여 강도를</span>
-                        <span>조절하여 운동을 진행합니다.</span>
+                        <span>의학 기반 테마에 맞게 교구 4가지를 활용하여</span>
+                        <span>강도를 조절하여 운동을 진행합니다.</span>
                         <br/><br/>
                         <span>하체 운동을 더 효과적으로 진행하기 위해</span>
                         <span>교구를 자체 개발 진행중입니다. (출시예정)</span>
@@ -110,8 +110,8 @@ function Why() {
                     <div className="second">
                         <p>스포츠 프로그램을 통해 재미를 더했습니다.</p>
                         <br/>
-                        <span>태권도, 복싱 등 비전통적인 스포츠 접근을 통해</span>
-                        <span>어르신들의 흥미를 이끌어냅니다.</span>
+                        <span>태권도, 복싱 등을 비롯하여 새로운 스포츠 접근을 통해</span>
+                        <span>어르신들의 흥미를 이끕니다.</span>
                         <br/>
                         <div className="why-imgs">
                             <div className="item">
@@ -140,8 +140,8 @@ function Why() {
                         <p>교구를 통해 어르신들의 운동의 강도를</p>
                         <p>맞춤으로 조절합니다.</p>
                         <br/><br/>
-                        <span>의학 기반 테마에 맞춰 교구 4가지를 활용하여 강도를</span>
-                        <span>조절하여 운동을 진행합니다.</span>
+                        <span>의학 기반 테마에 맞게 교구 4가지를 활용하여</span>
+                        <span>강도를 조절하여 운동을 진행합니다.</span>
                         <br/><br/>
                         <span>하체 운동을 더 효과적으로 진행하기 위해</span>
                         <span>교구를 자체 개발 진행중입니다. (출시예정)</span>

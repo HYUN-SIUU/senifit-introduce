@@ -16,7 +16,7 @@ function Inquire() {
             <div className="inquire-contact">
                 <div className="contact-item">
                     <p>상담가능시간</p>
-                    <p>09:00 ~ 18:00</p>
+                    <p>10:00 ~ 18:00</p>
                     <img src={in1} alt="상담" className="contact-icon" />
                 </div>
                 <div className="contact-item">

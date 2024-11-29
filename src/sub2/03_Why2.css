@@ -18,19 +18,23 @@
     }
 }
 
+.why2 .up {
+    margin-bottom: 64px;
+}
+
 .why2 .up, .why2 .down {
     display: flex; gap: 10%;
     width: 100%;
 }
 
 .why2 p {
-    font-size: 24px; font-weight: 700; line-height: 125%; letter-spacing: -0.48px;
+    font-size: 32px; font-weight: 700; line-height: 125%; letter-spacing: -0.48px;
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .why2 p {
-        font-size: 20px;
+        font-size: 28px;
     }
 }
 
@@ -49,7 +53,7 @@
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .why2 span {
-        font-size: 17px;
+        font-size: 20px;
     }
 }
 
@@ -60,7 +64,65 @@
     }
 }
 
+.why2 .orange {
+    color: var(--MAIN, #FF8A00);
+}
 
+.why2 .first .orange, .why2 .second .orange, .why2 .third .orange {
+    font-size: 20px; font-weight: 400; line-height: 125%; letter-spacing: -0.48px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why2 .first .orange, .why2 .second .orange, .why2 .third .orange {
+        font-size: 20px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why2 .first .orange, .why2 .second .orange, .why2 .third .orange {
+        font-size: 14px;
+    }
+}
+
+.why2 .first p .orange, .why2 .second p .orange, .why2 .third p .orange {
+    font-size: 32px; font-weight: 700; line-height: 125%; letter-spacing: -0.48px;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why2 .first p .orange, .why2 .second p .orange, .why2 .third p .orange {
+        font-size: 28px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why2 .first p .orange, .why2 .second p .orange, .why2 .third p .orange {
+        font-size: 16px;
+    }
+}
+
+.why2 .second .item .orange {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+/* 화면 너비가 800px ~ 1270px일 때 */
+@media (max-width: 1270px) and (min-width: 800px) {
+    .why2 .second .item .orange {
+        font-size: 16px;
+    }
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media (max-width: 800px) {
+    .why2 .second .item .orange {
+        font-size: 12px;
+    }
+}
 
 
 
@@ -94,20 +156,28 @@
 }
 
 .why2 .title span {
-    font-size: 48px; font-weight: 700; line-height: 150%; letter-spacing: -0.96px;
+    font-size: 64px; font-weight: 700; line-height: 150%; letter-spacing: -0.96px;
 } 
 
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
-    .why2 .title p, .why2 .title span {
-        font-size: 36px;
+    .why2 .title p {
+        font-size: 40px;
+    }
+
+    .why2 .title span {
+        font-size: 54px;
     }
 }
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
-    .why2 .title p, .why2 .title span {
-        font-size: 20px;
+    .why2 .title p {
+        font-size: 18px;
+    }
+
+    .why2 .title span {
+        font-size: 24px;
     }
 }
 
@@ -288,46 +358,9 @@
 
 
 
-
-.why2 .orange {
-    color: var(--MAIN, #ff6600);
-}
-
-.why2 .second p .orange, .why2 .third p .orange {
-    font-size: 24px; font-weight: 700; line-height: 125%; letter-spacing: -0.48px;
-}
-
-/* 화면 너비가 800px ~ 1270px일 때 */
-@media (max-width: 1270px) and (min-width: 800px) {
-    .why2 .second p .orange, .why2 .third p .orange {
-        font-size: 20px;
-    }
-}
-
-/* 화면 너비가 800px 이하일 때 */
-@media (max-width: 800px) and (min-width: 500px) {
-    .why2 .second p .orange, .why2 .third p .orange {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 500px) {
-    .why2 .second p .orange, .why2 .third p .orange {
-        font-size: 12px;
-    }
-}
-
-
-
-
-
-
-
-
-
 .why2 .count {
     color: #000;
-    font-size: 88px;
+    font-size: 72px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -339,20 +372,14 @@
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .why2 .count {
-        font-size: 48px; margin-bottom: 35px; letter-spacing: -1.0px;
+        font-size: 48px; margin-bottom: 24px; letter-spacing: -1.0px;
     }
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 800px) and (min-width: 500px) {
     .why2 .count {
-        font-size: 32px; margin-bottom: 30px; letter-spacing: -0.64px;
-    }
-}
-
-/* 화면 너비가 800px 이하일 때 */
-@media (max-width: 500px) {
-    .why2 .count {
-        font-size: 24px; margin-bottom: 25px; letter-spacing: -0.36px;
+        font-size: 28px; margin-bottom: 16px; letter-spacing: -0.64px;
+        border-bottom: 4px solid black;
     }
 }

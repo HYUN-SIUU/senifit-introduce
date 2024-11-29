@@ -7,17 +7,17 @@
     align-items: flex-start;
     gap: 8px;
     flex: 1 0 0;
-    background-image: url('../img/02_maintitle.JPG');
+    background-image: url('../img/02_maintitle.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 100px;
+    margin-top: 86px;
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .main-title {
-        margin-top: 96px;
+        margin-top: 80px;
         padding: 50px 50px;
     }
 }
@@ -25,7 +25,7 @@
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
     .main-title {
-        margin-top: 84px;
+        margin-top: 48px;
         padding: 36px 32px;
     }
 }
@@ -94,6 +94,10 @@
     .main-title .h1 {
         font-size: 20px;
     }
+}
+
+.main-title .orange {
+    font-weight: 600;
 }
 
 
@@ -187,7 +191,7 @@
     align-items: center;
     gap: 8px;
     border-radius: 100px;
-    background: var(--MAIN, #ff6600);
+    background: var(--MAIN, #FF8A00);
     color: #FFF;
     text-align: center;
     font-size: 36px;
@@ -234,5 +238,5 @@
 
 
 .main-title .orange {
-    color: var(--MAIN, #ff6600);
+    color: var(--MAIN, #FF8A00);
 }

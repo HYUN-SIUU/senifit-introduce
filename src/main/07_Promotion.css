@@ -34,7 +34,7 @@
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .promotion-title p {
-       font-size: 48px;
+       font-size: 40px;
     }
 }
 
@@ -69,14 +69,14 @@
     left: 39%;
     display: inline-flex;
     width: 22%;
-    padding: 20px 52px;
+    padding: 20px 48px;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    background: var(--MAIN, #ff6600);
+    background: var(--MAIN, #FF8A00);
     color: #FFF;
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -1.44px;
@@ -87,7 +87,7 @@
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .promotion .application-consult {
-        padding: 12px 24px;
+        padding: 16px 36px;
         font-size: 24px;
         letter-spacing: -1.28px;
     }
@@ -97,7 +97,7 @@
 @media (max-width: 800px) and (min-width: 500px) {
     .promotion .application-consult {
         padding: 12px 24px;
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: -0.64px;
     }
 }

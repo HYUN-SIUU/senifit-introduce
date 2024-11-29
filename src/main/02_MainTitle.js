@@ -10,7 +10,7 @@ function MainTitle() {
             </div>
             <div className="twenty-two">
                 <p className="h1">어르신들이</p>
-                <p className="h1 orange">재미있고! 안전하게!</p>
+                <p className="h1 orange">재밌고! 안전하게!</p>
                 <p className="h1">운동할 수 있는 단체운동 프로그램</p>
             </div>
             <div className="sini-section twenty-two">
@@ -18,7 +18,7 @@ function MainTitle() {
                 <p>시니핏</p>
             </div>
             <div className="application-consult">
-            상담신청→ 
+            상담신청 → 
             </div>
         </div>
     );

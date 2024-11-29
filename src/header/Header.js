@@ -41,7 +41,7 @@ function Header() {
                                 <div className="header-logo" onClick={() => navigate('/main')}>
                                     <img src={mainLogo} alt="SGEE Logo" />
                                 </div>
-                                <div className="header-title">
+                                <div className="header-title" onClick={() => navigate('/main')}>
                                     <p>한국노인단체운동전문가협회</p>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ function Header() {
                         <div className="header-logo" onClick={() => navigate('/main')}>
                             <img src={mainLogo} alt="SGEE Logo" />
                         </div>
-                        <div className="header-title">
+                        <div className="header-title" onClick={() => navigate('/main')}>
                             <p>한국노인단체운동전문가협회</p>
                         </div>
                     </div>

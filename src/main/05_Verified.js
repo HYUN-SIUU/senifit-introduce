@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './05_Verified.css';
 import person1 from '../img/05_people1.png';
 import person2 from '../img/05_people2.png';
-import image1 from '../img/05_verify1.JPG';
-import image2 from '../img/05_verify2.JPG';
-import image3 from '../img/05_verify3.JPG';
+import image1 from '../img/05_verify1.png';
+import image2 from '../img/05_verify2.png';
+import image3 from '../img/05_verify3.png';
 
 function Verified() {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1270);
@@ -73,9 +73,9 @@ function Verified() {
         </div>
         {/* 세 번째 섹션: 배경 사진 */}
         <div className="real-images">
-            <img src={image1} alt="배경 이미지 1" className="background-img" />
-            <img src={image2} alt="배경 이미지 2" className="background-img" />
-            <img src={image3} alt="배경 이미지 3" className="background-img" />
+            <div className="background-img1" ></div>
+            <div className="background-img2" ></div>
+            <div className="background-img3" ></div>
         </div>
         </>
     );

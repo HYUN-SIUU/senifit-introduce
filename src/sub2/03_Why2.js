@@ -34,7 +34,7 @@ function Why() {
                     </div>
                     <div className="first">
                         <div className="count">01</div>
-                        <p>의학 기반으로 4가지 테마로</p>
+                        <p>의학 기반으로 <span className="orange">4가지 테마</span>로</p>
                         <p>근력 운동을 진행합니다.</p>
                         <br/>
                         <span>어르신들의 신체 능력 향상을 위해 체계적으로 운동을 진행합니다.</span>
@@ -47,8 +47,8 @@ function Why() {
                         <div className="count">02</div>
                         <p>스포츠 프로그램을 통해&nbsp;<span className="orange">재미</span>를 더했습니다.</p>
                         <br/>
-                        <span>태권도, 복싱 등 비전통적인 스포츠 접근을 통해</span>
-                        <span>어르신들의 흥미를 이끌어냅니다.</span>
+                        <span>태권도, 복싱 등을 비롯하여 새로운 스포츠 접근을 통해</span>
+                        <span>어르신들의 흥미를 이끕니다.</span>
                         <br/>
                         <div className="why-imgs">
                             <div className="item">
@@ -78,7 +78,7 @@ function Why() {
                         <p><span className="orange">교구</span>를 통해 어르신들의&nbsp;<span className="orange">운동의 강도</span>를</p>
                         <p><span className="orange">맞춤으로 조절</span>합니다.</p>
                         <br/>
-                        <span>의학 기반 테마에 맞춰&nbsp;<span className="orange">교구 4가지를 활용</span>하여</span>
+                        <span>의학 기반 테마에 맞게&nbsp;<span className="orange">교구 4가지를 활용하여</span></span>
                         <span><span className="orange">강도를 조절</span>하여 운동을 진행합니다.</span>
                         <br/>
                         <span>하체 운동을 더 효과적으로 진행하기 위해</span>
@@ -90,7 +90,7 @@ function Why() {
                 <>
                     {isMobile ? (
                         <div className="title">
-                            <p><span className="orange">왜</span>&nbsp;‘시니핏’이어야 할까요?</p>
+                            <p><span className="orange">왜</span>&nbsp;&nbsp;‘시니핏’이어야 할까요?</p>
                         </div>
                     ) : (
                         <div className="title">
@@ -101,7 +101,7 @@ function Why() {
                     )}
                     <div className="first">
                         <div className="count">01</div>
-                        <p>의학 기반으로 4가지 테마로</p>
+                        <p>의학 기반으로 <span className="orange">4가지 테마</span>로</p>
                         <p>근력 운동을 진행합니다.</p>
                         <br/>
                         <span>어르신들의 신체 능력 향상을 위해 체계적으로 운동을 진행합니다.</span>
@@ -112,8 +112,8 @@ function Why() {
                         <div className="count">02</div>
                         <p>스포츠 프로그램을 통해&nbsp;<span className="orange">재미</span>를 더했습니다.</p>
                         <br/>
-                        <span>태권도, 복싱 등 비전통적인 스포츠 접근을 통해</span>
-                        <span>어르신들의 흥미를 이끌어냅니다.</span>
+                        <span>태권도, 복싱 등을 비롯하여 새로운 스포츠 접근을 통해</span>
+                        <span>어르신들의 흥미를 이끕니다.</span>
                         <br/>
                         <div className="why-imgs">
                             <div className="item">
@@ -143,11 +143,9 @@ function Why() {
                         <p><span className="orange">교구</span>를 통해 어르신들의&nbsp;<span className="orange">운동의 강도</span>를</p>
                         <p><span className="orange">맞춤으로 조절</span>합니다.</p>
                         <br/><br/>
-                        <span>의학 기반 테마에 맞춰&nbsp;<span className="orange">교구 4가지를 활용</span>하여</span>
-                        <span><span className="orange">강도를 조절</span>하여 운동을 진행합니다.</span>
+                        <span>의학 기반 테마에 맞게&nbsp;<span className="orange">교구 4가지를 활용하여 강도를 조절</span>하여 운동을 진행합니다.</span>
                         <br/><br/>
-                        <span>하체 운동을 더 효과적으로 진행하기 위해</span>
-                        <span>교구를<span className="orange">자체 개발 진행중</span>입니다. (출시예정)</span>
+                        <span>하체 운동을 더 효과적으로 진행하기 위해 교구를<span className="orange">자체 개발 진행중</span>입니다. (출시예정)</span>
                     </div>
                 </>
             )}
