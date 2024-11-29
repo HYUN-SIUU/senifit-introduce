@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './05_Verified.css';
 import person1 from '../img/05_people1.png';
 import person2 from '../img/05_people2.png';
-import image1 from '../img/05_verify1.png';
-import image2 from '../img/05_verify2.png';
-import image3 from '../img/05_verify3.png';
 
 function Verified() {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1270);
