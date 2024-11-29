@@ -1,7 +1,7 @@
 import React from "react";
-import in1 from '../img/02_Inquire1.png';
-import in2 from '../img/02_Inquire2.png';
-import in3 from '../img/02_Inquire3.png';
+import in1 from '../img/sub4_02_Inquire1.png';
+import in2 from '../img/sub4_02_Inquire2.png';
+import in3 from '../img/sub4_02_Inquire3.png';
 import "./02_Inquire.css";
 
 function Inquire() {
@@ -36,14 +36,26 @@ function Inquire() {
             <div className="inquire-button">
                 <div className="btn-orange">
                     <button className="inquire-btn">
+                        <a 
+                        href="https://open.kakao.com/o/g7HzuG1g" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
                         상담신청하기
+                        </a>
                     </button>
                     <p>클릭시 상담신청 작성</p>
                     <p>페이지로 이동합니다.</p>
                 </div>
                 <div className="btn-brown">
                     <button className="inquire-btn">
+                        <a 
+                        href="https://open.kakao.com/o/g7HzuG1g" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
                         카카오톡 문의
+                        </a>
                     </button>
                     <p>궁금한 점은</p>
                     <p>언제든지 문의주세요.</p>

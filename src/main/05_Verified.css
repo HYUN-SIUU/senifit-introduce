@@ -185,18 +185,18 @@
 @media (max-width: 800px) {
     .feedback2 {
         width: 90%;
-        height: 111px;
+        height: 150px;
         padding: 0 24px;
     }
 }
 
 .feedback-img2 {
-    width: 15%;
+    width: 25%;
     border-radius: 50%;
 }
 
 .feedback-text2 {
-    width: 75%;
+    width: 70%;
     border-radius: 50%;
     text-align: left;
 }

@@ -183,9 +183,15 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 500px) {
     .inquire-button {
         gap: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .inquire-button {
+        gap: 30px;
     }
 }
 
@@ -211,6 +217,11 @@
     cursor: pointer;
 }
 
+.inquire-btn a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 @media (max-width: 1270px) and (min-width: 800px) {
     .inquire-btn {
         font-size: 24px;
@@ -219,11 +230,19 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width:500px) {
     .inquire-btn {
         font-size: 16px;
         letter-spacing: -0.64px;
         padding: 20px 52px;
+    }
+}
+
+@media (max-width: 500px) {
+    .inquire-btn {
+        font-size: 8px;
+        letter-spacing: -0.48px;
+        padding: 10px 25px;
     }
 }
 
@@ -233,10 +252,18 @@
     margin-bottom: 30px;
 }
 
+.inquire-button .btn-orange button:hover {
+    background-color: #e55a00;
+}
+
 .inquire-button .btn-brown button {
-    background-color: #5A2D0C;
+    background-color: #804400;
     color: white;
     margin-bottom: 30px;
+}
+
+.inquire-button .btn-brown button:hover {
+    background-color: #4E3218;
 }
 
 @media (max-width: 1270px) and (min-width: 800px) {
@@ -266,8 +293,14 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 500px) {
     .inquire-button p {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .inquire-button p {
+        font-size: 8px;
     }
 }

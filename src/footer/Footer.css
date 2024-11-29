@@ -39,7 +39,7 @@
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
-    .footer p {
+    .footer p, .footer .footer-email {
         font-size: 10px;
         letter-spacing: -0.2px;
     }

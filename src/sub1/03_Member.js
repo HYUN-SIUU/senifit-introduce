@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './03_Member.css';
-import member1 from '../img/03_member1.png';
-import member2 from '../img/03_member2.png';
-import member3 from '../img/03_member3.png';
+import member1 from '../img/sub1_03_member1.png';
+import member2 from '../img/sub1_03_member2.png';
+import member3 from '../img/sub1_03_member3.png';
 
 function Member() {
     const [activeCard, setActiveCard] = useState('first');

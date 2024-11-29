@@ -113,6 +113,12 @@
     text-align: left;
 }
 
+@media (max-width: 800px) {
+    .intro .down .text-container {
+        text-align: center;
+    }
+}
+
 .intro .down .text-container p {
     color: #000;
     font-size: 24px;

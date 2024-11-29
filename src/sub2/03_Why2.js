@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './03_Why2.css';
 import Medic from '../img/04_medic.png';
+import Medic2 from '../img/04_medic2.png';
 import Image1 from '../img/04_why1.png';
 import Image2 from '../img/04_why2.png';
 import Image3 from '../img/04_why3.png';
@@ -9,11 +10,13 @@ import Image4 from '../img/04_why4.png';
 function Why() {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1270);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
+    const [medicSrc, setMedicSrc] = useState(Medic);
 
     useEffect(() => {
         const handleResize = () => {
             setIsLargeScreen(window.innerWidth > 1270);
             setIsMobile(window.innerWidth <= 800);
+            setMedicSrc(window.innerWidth <= 800 ? Medic2 : Medic);
         };
 
         window.addEventListener('resize', handleResize);
@@ -88,17 +91,10 @@ function Why() {
                 </>
             ) : (
                 <>
-                    {isMobile ? (
-                        <div className="title">
-                            <p><span className="orange">왜</span>&nbsp;&nbsp;‘시니핏’이어야 할까요?</p>
-                        </div>
-                    ) : (
-                        <div className="title">
-                            <span className="orange">왜</span>
-                            <p>‘시니핏’이어야</p>
-                            <p>할까요?</p>
-                        </div>
-                    )}
+                    <div className="title">
+                        <p><span className="orange">왜</span>&nbsp;&nbsp;‘시니핏’이어야 할까요?</p>
+                    </div>
+                    
                     <div className="first">
                         <div className="count">01</div>
                         <p>의학 기반으로 <span className="orange">4가지 테마</span>로</p>
@@ -106,7 +102,7 @@ function Why() {
                         <br/>
                         <span>어르신들의 신체 능력 향상을 위해 체계적으로 운동을 진행합니다.</span>
                         <br/><br/>
-                        <img src={Medic} alt="medic" />
+                        <img src={medicSrc} alt="medic" />
                     </div>
                     <div className="second">
                         <div className="count">02</div>

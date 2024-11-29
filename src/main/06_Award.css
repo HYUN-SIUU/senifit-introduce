@@ -82,12 +82,19 @@
     width: 33%;
     border-radius: 12px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .background-item img {
     width: 100%;
     height: 300px;
     display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.background-item:hover img {
+    transform: scale(1.1); /* 확대 효과 */
+    filter: grayscale(20%) brightness(90%); /* 회색 톤 + 밝기 조정 */
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
@@ -104,10 +111,20 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
 .background-item .overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 110px;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px;
@@ -116,15 +133,31 @@
     font-weight: 500;
     letter-spacing: -0.4px;
     text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-item .overlay p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 정확히 2줄까지만 표시 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0; /* 기본 마진 제거 */
+    flex-grow: 1; /* 남는 공간을 모두 차지 */
 }
 
 .background-item .overlay span {
-    font-weight: 300;
+    flex-shrink: 0; /* span이 줄어들지 않게 고정 */
+    font-size: 14px;
+    font-weight: 200;
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .background-item .overlay {
+        height: 90px;
         font-size: 16px;
         letter-spacing: -0.3px;
     }
@@ -132,9 +165,14 @@
 
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
+    .background-item .overlay {
+        height: 70px;
+    }
+
     .background-item .overlay p {
         font-size: 14px;
         letter-spacing: -0.28px;
+        line-height: 120%
     }
 
     .background-item .overlay span {
