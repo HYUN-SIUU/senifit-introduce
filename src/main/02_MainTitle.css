@@ -11,13 +11,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 86px;
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .main-title {
-        margin-top: 80px;
         padding: 50px 50px;
     }
 }
@@ -25,7 +23,6 @@
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
     .main-title {
-        margin-top: 48px;
         padding: 36px 32px;
     }
 }

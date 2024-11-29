@@ -1,6 +1,6 @@
 .header {
     max-width: 1440px;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 200;
     background-color: #ffffff;
