@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #FBF9F8;
 }
 
 
@@ -26,7 +27,7 @@
     line-height: normal;
 }
 
-@media (max-width: 1270px) and (min-width: 800px) {
+@media (max-width: 1270px) and (min-width: 801px) {
     .intro .up {
         font-size: 18px;
     }
@@ -106,14 +107,14 @@
 
 .intro .down .text-container p {
     color: #000;
-    font-size: 24px;
+    font-size: 20px;
     line-height: normal;
     font-weight: 400;
     letter-spacing: -0.56px;
 }
 
 .intro .down .text-container p:first-child {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     
 }
@@ -122,29 +123,18 @@
     font-weight: 600;
 }
 
-@media (max-width: 1270px) and (min-width: 800px) {
-    .intro .down .text-container p {
-        font-size: 20px;
-        letter-spacing: -0.48px;
-    }
-    
-    .intro .down .text-container p:first-child {
-        font-size: 28px;        
-    }
-}
-
-
 @media (max-width: 800px) {
     .intro .down .text-container {
         width: 100%;
     }
 
     .intro .down .text-container p {
-        font-size: 14px;
-        letter-spacing: -0.32px;
+        font-size: 12px;
+        letter-spacing: -0.2px;
     }
     
     .intro .down .text-container p:first-child {
-        font-size: 22px;        
+        font-size: 14px;
+        letter-spacing: -0.28px;    
     }
 }

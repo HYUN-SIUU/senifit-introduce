@@ -75,7 +75,7 @@ function Member() {
             <div className="circle" style={circleStyle}></div>
 
             <div className="member-title">
-                <p>협회임원 소개</p>
+                <p>협회임원진 소개</p>
             </div>
 
             <div className="member-box" ref={cardRef}>

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/all.css"
 import './03_Why2.css';
-import Medic from '../img/04_medic.png';
-import Medic2 from '../img/04_medic2.png';
+import Medic from '../img/sub2_03_medic.png';
+import Medic2 from '../img/sub2_03_medic2.png';
 import Image1 from '../img/04_why1.png';
 import Image2 from '../img/04_why2.png';
 import Image3 from '../img/04_why3.png';
