@@ -124,13 +124,23 @@
 }
 
 /* 화면 너비가 800px 이하일 때 */
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 601px) {
     .mass {
         flex-direction: column;
     }
 
     .mass.mass-last {
-        height: auto;
+        height: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mass {
+        flex-direction: column;
+    }
+
+    .mass.mass-last {
+        height: 50px;
     }
 }
 
@@ -227,6 +237,10 @@
         line-height: 110%;
         letter-spacing: -0.24px;
     }
+
+    .circle-text {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -303,20 +317,20 @@
 @media (max-width: 800px) and (min-width: 601px) {
     .process .arrow {
         position: absolute;
-        top: 87%;
-        left: 49.7%;
-        width: 30px;
-        height: 30px;
+        top: 81%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
         transform: rotate(225deg);
     }
 }
 @media (max-width: 600px) and (min-width: 300px) {
     .process .arrow {
         position: absolute;
-        top: 82%;
-        left: 49.6%;
-        width: 30px;
-        height: 30px;
+        top: 83%;
+        left: 49.3%;
+        width: 20px;
+        height: 20px;
         transform: rotate(225deg);
     }
 }
@@ -364,7 +378,7 @@
     letter-spacing: -0.36px;
 }
 
-@media (max-width: 1270px) and (min-width: 800px) {
+@media (max-width: 1270px) and (min-width: 901px) {
     .process .line {
         position: absolute;
         top: 10%;
@@ -376,6 +390,37 @@
         transform: translateX(-50%);
     }
 
+    .process .mass-text {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 36%;
+        left: 0;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        font-size: 20px;
+        letter-spacing: -0.4px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 801px) {
+    .process .line {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 5px;
+        height: 81%;
+        padding: 0;
+        background-color: #fff;
+        transform: translateX(-50%);
+    }
+    
     .process .mass-text {
         width: 100%;
         height: auto;
@@ -402,7 +447,7 @@
         top: 10%;
         left: 50%;
         width: 5px;
-        height: 81%;
+        height: 73%;
         padding: 0;
         background-color: #fff;
     }
@@ -411,7 +456,7 @@
         width: 100%;
         height: auto;
         position: absolute;
-        top: 33%;
+        top: 34%;
         left: 0;
         padding: 0;
         margin: 0;
@@ -430,7 +475,7 @@
     .process .line {
         position: absolute;
         top: 10%;
-        left: 50%;
+        left: 49.5%;
         width: 5px;
         height: 77%;
         padding: 0;
@@ -441,7 +486,7 @@
         width: 100%;
         height: auto;
         position: absolute;
-        top: 33%;
+        top: 34%;
         left: 0;
         padding: 0;
         margin: 0;
@@ -451,7 +496,7 @@
         justify-content: center;
         align-items: center;
     
-        font-size: 12px;
+        font-size: 7px;
         letter-spacing: -0.24px;
     }
 }
