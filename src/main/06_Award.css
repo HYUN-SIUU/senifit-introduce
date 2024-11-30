@@ -100,7 +100,6 @@
 .background-item {
     position: relative;
     width: 33%;
-    border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
 }
