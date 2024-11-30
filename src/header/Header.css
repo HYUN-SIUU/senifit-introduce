@@ -179,14 +179,20 @@
     width: 100vw;
     height: 250vh;
     background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
-.hamburger-menu .menu-content {
+.hamburger-menu .home-img {
     position: absolute;
     top: 60px;
+    left: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hamburger-menu .move-button {
+    position: absolute;
+    top: 92px;
     left: 60px;
     text-align: center;
 }
@@ -195,16 +201,16 @@
     display: block;
     background: none;
     border: none;
-    color: #ff6600;
+    color: #FF8A00;
     font-size: 1.5rem;
-    margin-bottom: 40px;
+    margin-top: 36px;
     cursor: pointer;
 }
 
 .hamburger-menu .close-menu {
     position: absolute;
-    top: 60px;
-    right: 60px;
+    top: 30px;
+    right: 90px;
     background: none;
     border: none;
     color: #fff;
@@ -217,9 +223,15 @@
 }
 
 @media (max-width: 800px) {
-    .hamburger-menu .menu-content {
+    .hamburger-menu .home-img {
         position: absolute;
         top: 60px;
+        left: 30px;
+    }
+
+    .hamburger-menu .move-button {
+        position: absolute;
+        top: 84px;
         left: 30px;
     }
 
@@ -227,5 +239,23 @@
         position: absolute;
         top: 50px;
         right: 30px;
+    }
+}
+
+.hamburger-menu .home-img {
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.hamburger-menu img {
+    width: 32px;
+    position: absolute;
+    left: 6px;
+}
+
+@media (max-width: 800px) {
+    .hamburger-menu img {
+        width: 24px;
+        left: 0;
     }
 }

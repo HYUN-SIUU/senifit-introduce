@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Header.css';
 import "../styles/all.css"
 import mainLogo from '../img/main.png';
+import home from '../img/home.png';
 
 function Header() {
     const navigate = useNavigate();
@@ -31,10 +32,13 @@ function Header() {
                 menuOpen ? (
                     <div className="hamburger-menu">
                         <div className="menu-content">
-                            <button onClick={() => navigate('/sub1')}>SGEE 소개</button>
-                            <button onClick={() => navigate('/sub2')}>시니핏 소개</button>
-                            <button onClick={() => navigate('/sub3')}>SGEE 교육</button>
-                            <button onClick={() => navigate('/sub4')}>문의하기</button>
+                            <div className="home-img"><img src={home} alt="홈 버튼" onClick={() => navigate('/main')}/></div>
+                            <div className="move-button">
+                                <button onClick={() => navigate('/sub1')}>SGEE 소개</button>
+                                <button onClick={() => navigate('/sub2')}>시니핏 소개</button>
+                                <button onClick={() => navigate('/sub3')}>SGEE 교육</button>
+                                <button onClick={() => navigate('/sub4')}>문의하기</button>
+                            </div>
                         </div>
                         <button className="close-menu" onClick={toggleMenu}></button>
                     </div>

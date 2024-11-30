@@ -3,13 +3,17 @@ import "../styles/all.css"
 import './05_Verified.css';
 import person1 from '../img/05_people1.png';
 import person2 from '../img/05_people2.png';
+import person3 from '../img/05_people3.png';
+import person4 from '../img/05_people4.png';
 
 function Verified() {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1270);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
 
     useEffect(() => {
         const handleResize = () => {
             setIsLargeScreen(window.innerWidth > 1270);
+            setIsMobile(window.innerWidth <= 800);
         };
 
         handleResize(); // 초기 설정
@@ -51,17 +55,23 @@ function Verified() {
                 ) : (
                     <div className="real-feedback2">
                         <div className="feedback2">
-                            <img src={person1} alt="어르신 이미지" className="feedback-img2" />
+                            <img src={person3} alt="어르신 이미지" className="feedback-img2" />
                             <div className="feedback-text2">
                                 <p>무릎 쪽이 안 좋았는데 운동을 하고나서 많이 좋아졌어요!</p>
                                 <span>- OO 데이케어센터 최OO 어르신</span>
                             </div>
                         </div>
                         <div className="feedback2">
-                            <img src={person2} alt="복지사 이미지" className="feedback-img2" />
+                            <img src={person4} alt="복지사 이미지" className="feedback-img2" />
                             <div className="feedback-text2">
-                                <p>어르신들이 운동시간만 기다리고 있으시더라고요,</p>
-                                <p>수업이 끝나도 스포츠 동작을 자주 연습하세요!</p>
+                                {isMobile ? (
+                                    <p>어르신들이 운동시간만 기다리고 있으시더라고요, 수업이 끝나도 스포츠 동작을 자주 연습하세요!</p>
+                                ) : (
+                                    <>
+                                    <p>어르신들이 운동시간만 기다리고 있으시더라고요,</p>
+                                    <p>수업이 끝나도 스포츠 동작을 자주 연습하세요!</p>
+                                    </>
+                                )}
                                 <span>- OO 데이케어센터 이OO 복지사</span>
                             </div>
                         </div>
