@@ -128,10 +128,6 @@
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px;
-    font-size: 20px;
-    line-height: 150%;
-    font-weight: 500;
-    letter-spacing: -0.4px;
     text-align: left;
     overflow: hidden;
     display: flex;
@@ -146,20 +142,36 @@
     text-overflow: ellipsis;
     margin: 0; /* 기본 마진 제거 */
     flex-grow: 1; /* 남는 공간을 모두 차지 */
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 500;
+    letter-spacing: -0.4px;
 }
 
 .background-item .overlay span {
     flex-shrink: 0; /* span이 줄어들지 않게 고정 */
     font-size: 14px;
+    line-height: 150%;
     font-weight: 200;
+    letter-spacing: -0.4px;
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .background-item .overlay {
         height: 90px;
+    }
+
+    .background-item .overlay p {
         font-size: 16px;
         letter-spacing: -0.3px;
+        line-height: 120%;
+    }
+
+    .background-item .overlay span {
+        font-size: 14px;
+        letter-spacing: -0.3px;
+        line-height: 120%
     }
 }
 
@@ -170,13 +182,13 @@
     }
 
     .background-item .overlay p {
-        font-size: 14px;
+        font-size: 10px;
         letter-spacing: -0.28px;
         line-height: 120%
     }
 
     .background-item .overlay span {
-        font-size: 12px;
+        font-size: 8px;
         letter-spacing: -0.24px;
     }
 }

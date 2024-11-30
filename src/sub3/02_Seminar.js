@@ -23,8 +23,15 @@ function Seminar() {
                         <p>센터<br/>선순위<br/>연계자격</p>
                     </div>
                 </div>
-                <div className="mass">
+                <div className="mass mass-last">
                     <p className="circle-text">시니핏 프로그램을 활용<br/>SGEE 전문가로 출강</p>
+                </div>
+                <div className="line"></div>
+                <div className="arrow"></div>
+                <div className="mass-text">
+                    <p>연계 시&nbsp;</p>
+                    <p>EXPERT 교육은&nbsp;</p>
+                    <p>필수!</p>
                 </div>
             </div>
 

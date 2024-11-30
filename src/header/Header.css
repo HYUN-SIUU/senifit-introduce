@@ -19,13 +19,13 @@
 
 @media (max-width: 1270px) and (min-width: 800px) {
     .header-container {
-        padding: 20px 48px 20px 24px;
+        padding: 20px 24px 20px 24px;
     }
 }
 
 @media (max-width: 800px) {
     .header-container {
-        padding: 12px 32px 12px 16px;
+        padding: 12px 16px 12px 16px;
     }
 }
 
@@ -219,13 +219,13 @@
 @media (max-width: 800px) {
     .hamburger-menu .menu-content {
         position: absolute;
-        top: 30px;
+        top: 60px;
         left: 30px;
     }
 
     .hamburger-menu .close-menu {
         position: absolute;
-        top: 30px;
+        top: 50px;
         right: 30px;
     }
 }
