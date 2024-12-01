@@ -54,16 +54,17 @@
 
 
 .promotion {
-    position: relative;
-    padding-top: 70%;
-    background-image: url('../img/promotion.png');
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* position: relative; */
+    background-image: url('../img/07_promotion.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #FFF5EA;
 }
 
-.promotion .application-consult {
+/* .promotion .application-consult {
     position: absolute;
     top: 72%;
     left: 39%;
@@ -84,7 +85,6 @@
     transition: background-color 0.3s;
 }
 
-/* 화면 너비가 800px ~ 1270px일 때 */
 @media (max-width: 1270px) and (min-width: 800px) {
     .promotion .application-consult {
         padding: 16px 36px;
@@ -93,7 +93,6 @@
     }
 }
 
-/* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) and (min-width: 500px) {
     .promotion .application-consult {
         padding: 12px 24px;
@@ -102,7 +101,6 @@
     }
 }
 
-/* 화면 너비가 800px 이하일 때 */
 @media (max-width: 500px) {
     .promotion .application-consult {
         padding: 10px 20px;
@@ -112,5 +110,5 @@
 }
 
 .promotion .application-consult:hover {
-    background-color: #e55a00; /* 호버 시 버튼 배경색 */
-}
+    background-color: #e55a00;
+} */

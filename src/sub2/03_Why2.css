@@ -30,7 +30,7 @@
 }
 
 .why2 p {
-    font-size: 32px; font-weight: 700; line-height: 125%; letter-spacing: -0.48px;
+    font-size: 32px; font-weight: 800; line-height: 125%; letter-spacing: -0.48px;
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
@@ -48,7 +48,7 @@
 }
 
 .why2 span {
-    font-size: 20px; font-weight: 400; line-height: 150%; letter-spacing: -0.4px;
+    font-size: 20px; font-weight: 450; line-height: 150%; letter-spacing: -0.4px;
     margin-bottom: 0;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .why2 .first .orange, .why2 .second .orange, .why2 .third .orange {
-    font-size: 20px; font-weight: 400; line-height: 125%; letter-spacing: -0.48px;
+    font-size: 20px; font-weight: 450; line-height: 125%; letter-spacing: -0.48px;
 }
 
 /* 화면 너비가 800px ~ 1270px일 때 */
