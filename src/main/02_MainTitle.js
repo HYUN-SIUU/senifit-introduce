@@ -4,6 +4,10 @@ import "../styles/all.css"
 import './02_MainTitle.css';
 
 function MainTitle() {
+    const handleConsultClick = () => {
+        window.open("https://forms.gle/YRKqLGjRfMHiHEp99", "_blank");
+    };
+
     return (
         <div className="main-title">
             <div>
@@ -18,8 +22,8 @@ function MainTitle() {
                 <img src={siniImage} alt="시니핏 로고" className="sini-image" />
                 <p>시니핏</p>
             </div>
-            <div className="application-consult">
-            상담신청 → 
+            <div className="application-consult" onClick={handleConsultClick}>
+                상담신청 → 
             </div>
         </div>
     );

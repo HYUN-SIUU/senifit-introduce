@@ -6,6 +6,14 @@ import "../styles/all.css"
 import "./02_Inquire.css";
 
 function Inquire() {
+    const handleConsultClick = () => {
+        window.open("https://forms.gle/YRKqLGjRfMHiHEp99", "_blank");
+    };
+
+    const handleConsultClick2 = () => {
+        window.open("https://open.kakao.com/o/g7HzuG1g", "_blank");
+    };
+
     return (
         <div className="inquire">
             {/* Title Section */}
@@ -36,27 +44,15 @@ function Inquire() {
             {/* Buttons Section */}
             <div className="inquire-button">
                 <div className="btn-orange">
-                    <button className="inquire-btn">
-                        <a 
-                        href="https://open.kakao.com/o/g7HzuG1g" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        >
+                    <button className="inquire-btn" onClick={handleConsultClick2}>
                         상담신청하기
-                        </a>
                     </button>
                     <p>클릭시 상담신청 작성</p>
                     <p>페이지로 이동합니다.</p>
                 </div>
                 <div className="btn-brown">
-                    <button className="inquire-btn">
-                        <a 
-                        href="https://open.kakao.com/o/g7HzuG1g" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        >
+                    <button className="inquire-btn" onClick={handleConsultClick2}>
                         카카오톡 문의
-                        </a>
                     </button>
                     <p>궁금한 점은</p>
                     <p>언제든지 문의주세요.</p>

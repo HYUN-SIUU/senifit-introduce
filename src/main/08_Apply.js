@@ -3,6 +3,10 @@ import "../styles/all.css"
 import './08_Apply.css';
 
 function Apply() {
+    const handleConsultClick = () => {
+        window.open("https://forms.gle/YRKqLGjRfMHiHEp99", "_blank");
+    };
+
     return (
         <div className="apply">
             {/* 제목 */}
@@ -17,7 +21,7 @@ function Apply() {
             </p>
 
             {/* 상담신청 버튼 */}
-            <div className="application-consult">
+            <div className="application-consult" onClick={handleConsultClick}>
                 상담신청 →
             </div>
 

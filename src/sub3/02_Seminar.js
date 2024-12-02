@@ -3,6 +3,14 @@ import "../styles/all.css"
 import "./02_Seminar.css";
 
 function Seminar() {
+    const handleConsultClick = () => {
+        window.open("https://forms.gle/YRKqLGjRfMHiHEp99", "_blank");
+    };
+
+    const handleConsultClick3 = () => {
+        window.open("https://open.kakao.com/o/g7HzuG1g", "_blank");
+    };
+
     return (
         <div className="seminar">
             <p className="title"><span className="brown">SGEE 교육</span>에서 <span className="orange">채용</span>까지!</p>
@@ -37,14 +45,8 @@ function Seminar() {
 
             <div className="seminar-button">
                 <div className="btn-orange">
-                    <button className="seminar-btn">
-                        <a 
-                        href="https://open.kakao.com/o/g7HzuG1g" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        >
+                    <button className="seminar-btn" onClick={handleConsultClick}>
                         바로 참가신청하기
-                        </a>
                     </button>
                     <p>클릭시 신청서 작성 폼으로 이동합니다.</p>
                 </div>
@@ -61,14 +63,8 @@ function Seminar() {
                     <p>다음 행사 일정을 먼저 연락드립니다.</p>
                 </div>
                 <div className="btn-brown">
-                    <button className="seminar-btn">
-                        <a 
-                        href="https://open.kakao.com/o/g7HzuG1g" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        >
+                    <button className="seminar-btn" onClick={handleConsultClick3}>
                         카카오톡 문의
-                        </a>
                     </button>
                     <p>궁금한 점은 언제든지 문의주세요.</p>
                 </div>
