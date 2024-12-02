@@ -44,7 +44,7 @@ function Inquire() {
             {/* Buttons Section */}
             <div className="inquire-button">
                 <div className="btn-orange">
-                    <button className="inquire-btn" onClick={handleConsultClick2}>
+                    <button className="inquire-btn" onClick={handleConsultClick}>
                         상담신청하기
                     </button>
                     <p>클릭시 상담신청 작성</p>
