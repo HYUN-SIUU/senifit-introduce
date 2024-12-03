@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/all.css"
 import './06_Award.css';
-import videoFile from '../img/06_award.MOV';
+// import videoFile from '../img/06_award.MOV';
 import bgImage1 from '../img/06_award1.jpg';
 import bgImage2 from '../img/06_award2.jpg';
 import bgImage3 from '../img/06_award3.jpg';
@@ -31,13 +31,12 @@ function Award() {
                 시니핏은 이렇게 <span className="orange">인정</span>받고 있어요!
             </h2>
 
-            {/* 동영상 영역 */}
-            <div className="video-container">
+            {/* <div className="video-container">
                 <video controls>
                     <source src={videoFile} type="video/mp4" />
                     해당 브라우저는 동영상을 지원하지 않습니다.
                 </video>
-            </div>
+            </div> */}
         </div>
         {/* 배경 사진 영역 */}
         {isMobile ? (
