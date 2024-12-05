@@ -8,14 +8,12 @@ import home from '../img/home.png';
 function Header() {
     const navigate = useNavigate();
 
-    const [nowWidth, setNowWidth] = useState(window.innerWidth);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1270);
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
             setIsLargeScreen(window.innerWidth > 1270);
-            setNowWidth(window.innerWidth);
         };
 
         handleResize(); // 초기 설정
@@ -27,7 +25,7 @@ function Header() {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <header className={`header ${menuOpen ? 'menu-open' : ''}`} style={{width: nowWidth}}>
+        <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
             {!isLargeScreen ? (
                 menuOpen ? (
                     <div className="hamburger-menu">

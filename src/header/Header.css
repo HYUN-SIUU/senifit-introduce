@@ -1,5 +1,6 @@
 .header {
     max-width: 1440px;
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 200;
@@ -8,8 +9,7 @@
 
 .menu-open {
     padding: 0;
-    position: sticky;
-    top: 0;
+    overflow: hidden;
 }
 
 .header-container {
