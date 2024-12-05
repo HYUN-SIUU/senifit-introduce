@@ -84,7 +84,7 @@ function Why() {
                         <span><span className="orange">강도를 조절</span>하여 운동을 진행합니다.</span>
                         <br/>
                         <span>하체 운동을 더 효과적으로 진행하기 위해</span>
-                        <span>교구를<span className="orange">자체 개발 진행중</span>입니다. (출시예정)</span>
+                        <span>교구를&nbsp;<span className="orange">자체 개발 진행중</span>입니다. (출시예정)</span>
                     </div>
                 </div>
                 </>
@@ -145,7 +145,7 @@ function Why() {
                         <br/><br/>
                         <span>의학 기반 테마에 맞게&nbsp;<span className="orange">교구 4가지를 활용하여 강도를 조절</span>하여 운동을 진행합니다.</span>
                         <br/><br/>
-                        <span>하체 운동을 더 효과적으로 진행하기 위해 교구를<span className="orange">자체 개발 진행중</span>입니다. (출시예정)</span>
+                        <span>하체 운동을 더 효과적으로 진행하기 위해 교구를&nbsp;<span className="orange">자체 개발 진행중</span>입니다. (출시예정)</span>
                     </div>
                 </>
             )}

@@ -30,7 +30,7 @@ function Inquire() {
                 </div>
                 <div className="contact-item">
                     <p>전화번호</p>
-                    <p>02-###-####</p>
+                    <p>070-8065-7080</p>
                     <img src={in2} alt="전화" className="contact-icon" />
                 </div>
                 <div className="contact-item">

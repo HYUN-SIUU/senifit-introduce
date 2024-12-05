@@ -7,6 +7,10 @@ function Seminar() {
         window.open("https://forms.gle/YRKqLGjRfMHiHEp99", "_blank");
     };
 
+    const handleConsultClick2 = () => {
+        window.open("https://docs.google.com/forms/d/1-v0rm7xCxu2NWSjCQW6ajyqcAWfgakBpTdNptqKWBKw/edit", "_blank");
+    };
+
     const handleConsultClick3 = () => {
         window.open("https://open.kakao.com/o/g7HzuG1g", "_blank");
     };
@@ -51,14 +55,8 @@ function Seminar() {
                     <p>클릭시 신청서 작성 폼으로 이동합니다.</p>
                 </div>
                 <div className="btn-brown">
-                    <button className="seminar-btn">
-                        <a 
-                        href="https://open.kakao.com/o/g7HzuG1g" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        >
+                    <button className="seminar-btn" onClick={handleConsultClick2}>
                         새로운 일정 알림신청
-                        </a>
                     </button>
                     <p>다음 행사 일정을 먼저 연락드립니다.</p>
                 </div>
