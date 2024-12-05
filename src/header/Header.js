@@ -31,7 +31,7 @@ function Header() {
             {!isLargeScreen ? (
                 menuOpen ? (
                     <div className="hamburger-menu">
-                        <div className="menu-content">
+                        <div>
                             <div className="home-img"><img src={home} alt="홈 버튼" onClick={() => navigate('/main')}/></div>
                             <div className="move-button">
                                 <button onClick={() => navigate('/sub1')}>SGEE 소개</button>
