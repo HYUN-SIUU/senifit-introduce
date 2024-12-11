@@ -12,7 +12,7 @@ function Seminar() {
     };
 
     const handleConsultClick3 = () => {
-        window.open("https://open.kakao.com/o/g7HzuG1g", "_blank");
+        window.open("http://pf.kakao.com/_rXiVn", "_blank");
     };
 
     return (

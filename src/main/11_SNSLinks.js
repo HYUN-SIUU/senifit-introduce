@@ -10,7 +10,7 @@ function SNSLinks() {
     return (
         <div className="sns-links">
             <a 
-                href="https://open.kakao.com/o/g7HzuG1g" 
+                href="http://pf.kakao.com/_rXiVn" 
                 target="_blank" 
                 rel="noopener noreferrer"
             >
