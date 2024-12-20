@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "../styles/all.css"
 import "./02_Seminar.css";
 
 function Seminar() {
+    const navigate = useNavigate();
+
     const handleConsultClick = () => {
         window.open("https://forms.gle/YRKqLGjRfMHiHEp99", "_blank");
     };
@@ -44,6 +47,16 @@ function Seminar() {
                     <p>연계 시&nbsp;</p>
                     <p>EXPERT 교육은&nbsp;</p>
                     <p>필수!</p>
+                </div>
+            </div>
+
+            <div className="now">
+                <div className="now-text">
+                    <p>현재&nbsp;<span className="orange">진행중</span>인 교육</p>
+                </div>
+                <div className="now-img"></div>
+                <div className="now-btn" onClick={() => navigate('/sub3/pop')}>
+                    자세히 보기
                 </div>
             </div>
 

@@ -407,6 +407,94 @@
 
 
 
+.now {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.now .now-text {
+    color: #000;
+    text-align: center;
+    font-family: "IBM Plex Sans KR";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.8px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+    .now .now-text {
+        font-size: 36px;
+        letter-spacing: -0.72px;
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 800px) {
+    .now .now-text {
+        font-size: 18px;
+        letter-spacing: -0.36px;
+        margin-bottom: 16px;
+    }
+}
+
+.now .now-img {
+    width: 62.5%;
+    aspect-ratio: 1 / 1;
+    background-image: url('../img/sub3_02_pop1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.now .now-btn {
+    width: 62.5%;
+    height: 80px;
+    padding: 20px;
+    background-color: #FF8A00;
+    text-align: center;
+    color: #FFF;
+    font-family: "IBM Plex Sans KR";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.56px;
+    cursor: pointer;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+    .now .now-btn {
+        height: 70px;
+        padding: 16px;
+        font-size: 24px;
+        letter-spacing: -0.48px;
+    }
+}
+
+@media (max-width: 800px) {
+    .now .now-btn {
+        height: 40px;
+        padding: 8px;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
+}
+
+
+
+
+
+
+
+
+
 .seminar-button {
     width: 100%;
     display: flex;
