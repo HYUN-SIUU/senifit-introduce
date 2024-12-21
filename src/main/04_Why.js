@@ -51,7 +51,7 @@ function Why() {
                     <div className="second">
                         <p>스포츠 프로그램을 통해 재미를 더했습니다.</p>
                         <br/>
-                        <span>태권도, 복싱 등을 비롯하여 새로운 스포츠 접근을 통해</span>
+                        <span>태권도, 복싱 등을 비롯하여 새로운 스포츠 접근을 통해</span> {/*여기 줄이 너무 길어서 모바일에서 잘림*/}
                         <span>어르신들의 흥미를 이끕니다.</span>
                         <br/>
                         <div className="why-imgs">

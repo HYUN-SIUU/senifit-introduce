@@ -23,7 +23,7 @@ function Needed() {
                 <div className="first">
                     <div className="textbox">
                         <p>어르신들의 낙상 사고는</p>
-                        <p>생각만해도 끔찍해요.</p>
+                        <p>생각만 해도 끔찍해요.</p>
                         <br/>
                         <p className="orange">낙상 방지를 위해</p>
                         <p className="orange">운동을 시켜주고 싶은데</p>
