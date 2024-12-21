@@ -7,6 +7,12 @@
     padding: 128px 64px;
 }
 
+@media (max-width: 800px) {
+    .pop-up {
+        padding: 128px 30px;
+    }
+}
+
 .pop-up .up {
     position: relative;
     width: 100%;
@@ -90,6 +96,18 @@
     aspect-ratio: 1 / 1;
 }
 
+@media (max-width: 1270px) and (min-width: 800px) {
+    .pop-up .down img {
+        width: 75%;
+    }
+}
+
+@media (max-width: 800px) {
+    .pop-up .down img {
+        width: 100%;
+    }
+}
+
 
 
 
@@ -137,6 +155,7 @@
 
 @media (max-width: 800px) {
     .down-btn {
+        width: 30%;
         font-size: 14px;
         letter-spacing: -0.56px;
         padding: 8px 16px;
