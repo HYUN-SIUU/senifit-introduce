@@ -24,6 +24,7 @@ function Before() {
             {isMobile ? (
                 <div className="down">
                     <div className="back1"></div>
+                    <div className="back2"></div>
                 </div>
             ) : (
                 <div className="down">

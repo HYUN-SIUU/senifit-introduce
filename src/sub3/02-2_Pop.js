@@ -1,16 +1,18 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import pop1 from '../img/sub3_02_pop1.png';
-import pop2 from '../img/sub3_02_pop2.png';
-import pop3 from '../img/sub3_02_pop3.png';
-import pop4 from '../img/sub3_02_pop4.png';
-import pop5 from '../img/sub3_02_pop5.png';
-import pop6 from '../img/sub3_02_pop6.png';
 import "../styles/all.css"
 import "./02-2_Pop.css";
 
 function Pop() {
     const navigate = useNavigate();
+
+    const pop1 = 'https://senifit-bk.s3.ap-northeast-2.amazonaws.com/sub3/edu4.jpg';
+    const pop2 = 'https://senifit-bk.s3.ap-northeast-2.amazonaws.com/sub3/edu1.jpg';
+    const pop3 = 'https://senifit-bk.s3.ap-northeast-2.amazonaws.com/sub3/edu7.jpg';
+    const pop4 = 'https://senifit-bk.s3.ap-northeast-2.amazonaws.com/sub3/edu3.jpg';
+    const pop5 = 'https://senifit-bk.s3.ap-northeast-2.amazonaws.com/sub3/edu5.jpg';
+    const pop6 = 'https://senifit-bk.s3.ap-northeast-2.amazonaws.com/sub3/edu6.jpg';
+    const pop7 = 'https://senifit-bk.s3.ap-northeast-2.amazonaws.com/sub3/edu2.jpg';
 
     const handleConsultClick = () => {
         window.open("https://forms.gle/YRKqLGjRfMHiHEp99", "_blank");
@@ -32,6 +34,7 @@ function Pop() {
                 <img src={pop4} alt="pop4"></img>
                 <img src={pop5} alt="pop5"></img>
                 <img src={pop6} alt="pop6"></img>
+                <img src={pop7} alt="pop7"></img>
                 <div className="down-button">
                     <button className="down-btn" onClick={handleConsultClick}>
                         바로 참가신청하기

@@ -74,6 +74,14 @@
     gap: 2%;
 }
 
+@media (max-width: 800px) {
+    .before .down {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+}
+
 .before .down .back1 {
     width: 49%;
     aspect-ratio: 1 / 1;
@@ -86,15 +94,19 @@
 .before .down .back2 {
     width: 49%;
     aspect-ratio: 1 / 1;
-    background-image: url('../img/sub3_03_before1.png');
+    background-image: url('../img/sub3_03_before2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0;
 }
 
 @media (max-width: 800px) {
     .before .down .back1 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .before .down .back2 {
         width: 90%;
         margin-left: 5%;
     }

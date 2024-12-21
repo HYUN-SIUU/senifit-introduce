@@ -447,7 +447,7 @@
 .now .now-img {
     width: 62.5%;
     aspect-ratio: 1 / 1;
-    background-image: url('../img/sub3_02_pop1.png');
+    background-image: url('https://senifit-bk.s3.ap-northeast-2.amazonaws.com/sub3/edu4.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
