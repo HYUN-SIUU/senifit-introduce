@@ -7,9 +7,15 @@
     padding: 128px 64px;
 }
 
+@media (max-width: 1270px) and (min-width: 800px) {
+    .pop-up .up .up-text {
+        padding: 96px 64px;
+    }
+}
+
 @media (max-width: 800px) {
     .pop-up {
-        padding: 128px 30px;
+        padding: 24px 30px;
     }
 }
 
@@ -155,7 +161,7 @@
 
 @media (max-width: 800px) {
     .down-btn {
-        width: 30%;
+        width: 40%;
         font-size: 14px;
         letter-spacing: -0.56px;
         padding: 8px 16px;
