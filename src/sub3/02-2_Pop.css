@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 1270px) and (min-width: 800px) {
-    .pop-up .up .up-text {
+    .pop-up {
         padding: 96px 64px;
     }
 }
