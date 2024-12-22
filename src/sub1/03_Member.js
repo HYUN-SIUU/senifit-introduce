@@ -96,7 +96,7 @@ function Member() {
                 <div className={`member-card reverse ${activeCard === 'second' ? 'active' : ''}`} ref={secondCardRef}>
                     <img src={member2} alt="부회장" className="member-image" />
                     <div className="member-info member-info-2">
-                        <p>반갑습니다.  부회장&nbsp;<span>홍자형</span>&nbsp;입니다.</p>
+                        <p>반갑습니다.  부협회장&nbsp;<span>홍자형</span>&nbsp;입니다.</p>
                         <br />
                         <ul>
                             <li>광운대 스포츠융합과학 전공</li>
