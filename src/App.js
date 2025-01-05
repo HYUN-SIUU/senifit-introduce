@@ -6,11 +6,13 @@ import Sub2 from './pages/SGEE_Sub2_Intro(SINI)';
 import Sub3 from './pages/SGEE_Sub3_Edu';
 import Pop from './sub3/02-2_Pop';
 import Sub4 from './pages/SGEE_Sub4_Cont';
+import ScrollToTop from "./hooks/scorllToTop";
 
 function App() {
     return (
         <Router>
             <div style={{ maxWidth: '1440px', margin: 'auto' }}>
+                <ScrollToTop />
                 <Routes>
                     <Route path="/main" element={<Main />} />
                     <Route path="/sub1" element={<Sub1 />} />
