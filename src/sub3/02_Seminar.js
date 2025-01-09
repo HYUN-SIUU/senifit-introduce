@@ -54,10 +54,10 @@ function Seminar() {
                 <div className="now-text">
                     <p>현재&nbsp;<span className="orange">진행중</span>인 교육</p>
                 </div>
-                <div className="now-img"></div>
+                {/* <div className="now-img"></div>
                 <div className="now-btn" onClick={() => navigate('/sub3/pop')}>
                     자세히 보기
-                </div>
+                </div> */}
             </div>
 
             <div className="seminar-button">

@@ -68,24 +68,25 @@
 .before .down {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.before .down .down-div {
+    width: 100%;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 2%;
-}
-
-@media (max-width: 800px) {
-    .before .down {
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 10px;
-    }
+    gap: 10px;
 }
 
 .before .down .back1 {
     width: 49%;
     aspect-ratio: 1 / 1;
-    background-image: url('../img/sub3_03_before1.png');
+    background-image: url('https://senifit-bk.s3.ap-northeast-2.amazonaws.com/sub3/edu4.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,6 +101,25 @@
     background-repeat: no-repeat;
 }
 
+.before .down .back3 {
+    width: 49%;
+    aspect-ratio: 1 / 1;
+    background-image: url('../img/sub3_03_before3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.before .down .back4 {
+    width: 49%;
+    aspect-ratio: 1 / 1;
+    background-image: url('../img/sub3_03_before3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
 @media (max-width: 800px) {
     .before .down .back1 {
         width: 90%;
@@ -107,6 +127,11 @@
     }
 
     .before .down .back2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .before .down .back3 {
         width: 90%;
         margin-left: 5%;
     }

@@ -25,11 +25,18 @@ function Before() {
                 <div className="down">
                     <div className="back1"></div>
                     <div className="back2"></div>
+                    <div className="back3"></div>
                 </div>
             ) : (
                 <div className="down">
-                    <div className="back1"></div>
-                    <div className="back2"></div>
+                    <div className='down-div'>
+                        <div className="back1"></div>
+                        <div className="back2"></div>
+                    </div>
+                    <div className='down-div'>
+                        <div className='back3'></div>
+                        <div className='back4'></div>
+                    </div>
                 </div>
             )}
        </div> 
