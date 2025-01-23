@@ -52,13 +52,11 @@
 
 
 .video-container {
-    margin: 20px 0;
-}
-
-.video-container video {
-    width: 100%;
-    max-width: 800px;
+    margin-top: 20px;
     border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
 }
 
 
@@ -69,6 +67,12 @@
 
 
 
+
+.award-images-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .award-images {
     display: flex;
@@ -85,6 +89,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        gap: 10px;
     }
 
     .award-images > div {
@@ -126,7 +131,7 @@
 /* 화면 너비가 800px 이하일 때 */
 @media (max-width: 800px) {
     .background-item {
-        width: 50%;
+        width: 49%;
         height: auto;
         aspect-ratio: 1 / 1;
     }

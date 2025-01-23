@@ -15,8 +15,13 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="시니핏 프로그램을 활용하여 데이케어센터 등 노인복지시설로 나가 노인 단체 운동을 진행합니다."
     />
+    <!-- 네이버 검색 엔진 최적화를 위한 메타 태그 -->
+    <meta property="og:title" content="SGEE 한국노인단체운동전문가협회">
+    <meta property="og:description" content="시니핏 프로그램을 활용하여 데이케어센터 등 노인복지시설로 나가 노인 단체 운동을 진행합니다.">
+    <meta property="og:url" content="https://www.sgee.kr">
+    <meta property="og:image" content="https://www.sgee.kr/main.png">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -32,7 +37,51 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>SGEE</title>
+    <title>SGEE 한국노인단체운동전문가협회</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "SGEE 한국노인단체운동전문가협회",
+        "url": "https://www.sgee.kr",
+        "description": "시니핏 프로그램을 활용하여 데이케어센터 등 노인복지시설로 나가 노인 단체 운동을 진행합니다.",
+        "sameAs": [
+            "https://m.blog.naver.com/tt-turtle",
+            "https://www.instagram.com/sgee__official/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#"
+        ],
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "SiteNavigationElement",
+                    "name": "메인페이지",
+                    "url": "https://www.sgee.kr"
+                },
+                {
+                    "@type": "SiteNavigationElement",
+                    "name": "SGEE 소개",
+                    "url": "https://www.sgee.kr/sub1"
+                },
+                {
+                    "@type": "SiteNavigationElement",
+                    "name": "시니핏 소개",
+                    "url": "https://www.sgee.kr/sub2"
+                },
+                {
+                    "@type": "SiteNavigationElement",
+                    "name": "SGEE 교육",
+                    "url": "https://www.sgee.kr/sub3"
+                },
+                {
+                    "@type": "SiteNavigationElement",
+                    "name": "문의하기",
+                    "url": "https://www.sgee.kr/sub4"
+                }
+            ]
+        }
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
