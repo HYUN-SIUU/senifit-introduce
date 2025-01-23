@@ -35,10 +35,7 @@ function Award() {
 
                 <iframe 
                     className='video-container'
-                    src="https://tv.naver.com/embed/66919186" 
-                    width="100%" 
-                    height="500" 
-                    frameborder="0" 
+                    src="https://tv.naver.com/embed/66919186"
                     title="senifit-video"
                     allowfullscreen>
                 </iframe>
