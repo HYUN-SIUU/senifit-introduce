@@ -124,7 +124,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 380px;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.header-nav li {
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
 }
 
 .header-nav button {
@@ -132,11 +148,11 @@
     border: none;
     cursor: pointer;
     color: #000;
-    text-align: right;
     font-size: 18px;
     line-height: normal;
     letter-spacing: -1.2px;
     font-weight: 600;
+    text-align: center;
 }
 
 .header-nav button:hover {

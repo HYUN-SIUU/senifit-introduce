@@ -76,10 +76,12 @@ function Header() {
                         </div>
                     </div>
                     <nav className="header-nav">
-                        <button onClick={() => navigate('/sub1')}>SGEE 소개</button>
-                        <button onClick={() => navigate('/sub2')}>시니핏 소개</button>
-                        <button onClick={() => navigate('/sub3')}>SGEE 교육</button>
-                        <button onClick={() => navigate('/sub4')}>문의하기</button>
+                        <ul>
+                            <li><button onClick={() => navigate('/sub1')}>SGEE 소개</button></li>
+                            <li><button onClick={() => navigate('/sub2')}>시니핏 소개</button></li>
+                            <li><button onClick={() => navigate('/sub3')}>SGEE 교육</button></li>
+                            <li><button onClick={() => navigate('/sub4')}>문의하기</button></li>
+                        </ul>
                     </nav>
                 </div>
             )}

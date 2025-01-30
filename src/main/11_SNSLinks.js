@@ -36,7 +36,7 @@ function SNSLinks() {
                 target="_blank" 
                 rel="noopener noreferrer"
             >
-                <img src={youtube} alt="유튜브브 로고" className="sns-button" />
+                <img src={youtube} alt="유튜브 로고" className="sns-button" />
             </a>
         </div>
     );

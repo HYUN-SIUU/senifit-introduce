@@ -23,6 +23,9 @@
     <meta property="og:url" content="https://www.sgee.kr">
     <meta property="og:image" content="https://www.sgee.kr/main.png">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- 네이버 서브링크 관련 설정 -->
+    <meta name="naver" content="index, follow"> <!-- 검색 로봇이 모든 링크를 탐색하도록 허용 -->
+    <meta name="robots" content="index, follow">
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -39,6 +42,7 @@
     -->
     <title>SGEE 한국노인단체운동전문가협회</title>
 
+    <!-- JSON-LD: 구조화 데이터 -->
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -79,8 +83,44 @@
                     "url": "https://www.sgee.kr/sub4"
                 }
             ]
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "메인페이지",
+                    "item": "https://www.sgee.kr"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "SGEE 소개",
+                    "item": "https://www.sgee.kr/sub1"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "시니핏 소개",
+                    "item": "https://www.sgee.kr/sub2"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "SGEE 교육",
+                    "item": "https://www.sgee.kr/sub3"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "문의하기",
+                    "item": "https://www.sgee.kr/sub4"
+                }
+            ]
         }
-      }
+    }
+    
     </script>
   </head>
   <body>
