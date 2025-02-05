@@ -1,10 +1,10 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import "../styles/all.css"
 import "./02_Seminar.css";
 
 function Seminar() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const handleConsultClick = () => {
         window.open("https://forms.gle/YRKqLGjRfMHiHEp99", "_blank");
