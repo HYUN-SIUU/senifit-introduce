@@ -1,0 +1,223 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filter-info {
+    color: #888888;
+    font-size: 28px;
+    line-height: 250%;
+  }
+  
+  @media (max-width: 1270px) and (min-width: 800px) {
+    .filter-info {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .filter-info {
+      font-size: 11px;
+    }
+  }
+  
+  
+  
+  
+  
+  .filter-btn {
+    background-color: #FF8A00;
+    padding: 16px 24px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 100px;
+  }
+  
+  @media (max-width: 800px) {
+    .filter-btn {
+      padding: 8px 12px;
+      font-size: 10px;
+    }
+  }
+  
+  
+  
+  
+  
+  .filter-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .filter-popup {
+    background: white;
+    width: 560px;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  @media (max-width: 800px) {
+    .filter-popup {
+      width: 300px;
+      padding: 28px;
+    }
+  }
+  
+  
+  
+  
+  
+  .filter-component {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filter-component p {
+    width: 95px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .filter-options1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 한 줄에 5개 */
+    width: 385px;
+    gap: 16px;
+  }
+  
+  .filter-options2 {
+    display: flex;
+    justify-content: space-around;
+    width: 385px;
+    gap: 16px;
+  }
+  
+  .filter-label {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .filter-label input {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 1270px) and (min-width: 800px) {
+    .filter-label {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .filter-component p {
+      font-size: 14px;
+    }
+  
+    .filter-options1 {
+      grid-template-columns: repeat(3, 1fr); /* 한 줄에 3개 */
+      width: 245px;
+      gap: 12px;
+    }
+  
+    .filter-options2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개 */
+      width: 245px;
+      gap: 12px;
+    }
+  
+    .filter-label {
+      font-size: 12px;
+    }
+  }
+  
+  
+  
+  
+  
+  .selected-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  .selected-tag {
+    background-color: #FF8A00;
+    color: white;
+    padding: 12px 16px 12px 20px;
+    border-radius: 100px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .selected-tag button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1270px) {
+    .selected-tag {
+      padding: 8px 12px 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  
+  
+  
+  
+  .confirm-btn {
+    margin-top: 40px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    background: #888;
+    cursor: pointer;
+    border: none;
+  
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.8px;
+  }
+  
+  @media (max-width: 1270px) and (min-width: 800px) {
+    .confirm-btn {
+      font-size: 18px;
+      letter-spacing: -0.72px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .confirm-btn {
+      margin-top: 32px;
+      font-size: 16px;
+      letter-spacing: -0.64px;
+    }
+  }
+  
+  .filter-popup .line {
+    margin: 24px 0;
+    padding: 0;
+    height: 2px;
+    border-radius: 10px;
+    background: #D9D9D9;
+  }

@@ -1,0 +1,360 @@
+.teacher-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+  border: 1px solid #dee2e6;
+  padding: 40px;
+  transition: transform 0.2s;
+}
+  
+  
+  
+  
+  
+.teacher-image {
+  width: 240px;
+  height: 240px;
+  border-radius: 12px;
+}
+
+
+
+
+
+.teacher-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: left;
+  gap: 20px;
+}
+
+.status {
+  display: inline-block;
+  width: 285px;
+  height: 50px;
+  border-radius: 1000px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: "IBM Plex Sans KR";
+  text-align: center;
+  margin: 0 auto;
+}
+
+.status.active {
+  background-color: #DFEDFf;
+  color: #003D8E;
+}
+.status.preparing {
+  background: #D9FFE7;
+  color: #008E34;
+}
+.status.ready {
+  background-color: #FFF2DA;
+  color: #8E5C00;
+}
+
+.teacher-name {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.teacher-description {
+  font-size: 20px;
+  text-align: left;
+}
+
+.teacher-description .read-more {
+  color:#888;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.teacher-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.teacher-details p {
+  font-weight: 600;
+}
+
+.teacher-details p span {
+  font-weight: 400;
+  color: #868e96;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+  .teacher-card {
+    align-items: flex-start;
+  }
+
+  .teacher-image {
+    width: 200px;
+    height: 300px;
+  }
+
+  .teacher-text {
+    gap: 16px;
+  }
+
+  .status {
+    width: 270px;
+    height: 50px;
+    padding: 12px 24px;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .teacher-name {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .teacher-description {
+    font-size: 18px;
+  }
+
+  .teacher-details {
+    gap: 12px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .teacher-card {
+    flex-direction: column;
+  }
+
+  .teacher-image {
+    width: 200px;
+    height: 300px;
+  }
+
+  .teacher-text {
+    gap: 20px;
+  }
+
+  .status {
+    width: 200px;
+    height: 35px;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .teacher-name {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .teacher-description {
+    font-size: 14px;
+  }
+
+  .teacher-details {
+    gap: 12px;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+.teacher-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.teacher-popup {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  display: flex;
+  width: 888px;
+  height: 80vh;
+  padding: 56px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-popup::-webkit-scrollbar {
+	display:none /* Chrome , Safari , Opera */
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+  .teacher-popup {
+    width: 720px;
+    padding: 48px;
+  }
+}
+
+@media (max-width: 800px) {
+  .teacher-popup {
+    width: 300px;
+    padding: 24px 20px;
+  }
+}
+
+.teacher-popup .teacher-image {
+  width: 100%; /* 이미지가 팝업의 너비에 맞게 조정 */
+  max-width: 480px; /* 이미지 최대 너비 제한 */
+  height: auto; /* 세로 비율 유지 */
+  max-height: 300px; /* 이미지가 높이를 초과하지 않도록 제한 */
+  object-fit: cover; /* 이미지가 잘리지 않도록 비율 유지 */
+}
+
+
+
+
+
+.teacher-popup .status {
+  font-size: 18px;
+  font-family: "IBM Plex Sans KR";
+}
+
+.teacher-popup .teacher-name {
+  font-size: 32px;
+}
+
+.teacher-popup .teacher-description span {
+  font-size: 22px;
+  text-align: left;
+}
+
+.teacher-popup .teacher-description p {
+  font-size: 24px;
+  text-align: left;
+}
+
+.teacher-popup .teacher-details li, .teacher-popup .teacher-details p {
+  font-size: 24px;
+}
+
+.teacher-popup .teacher-details span {
+  font-size: 22px;
+}
+
+.teacher-popup .teacher-details ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0;
+}
+
+.teacher-popup .teacher-details li::before {
+  content: "-  ";
+  font-weight: 500;
+}
+
+.teacher-popup button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  margin: auto;
+  border-radius: 10px;
+  border: none;
+  background-color: #888;
+  color: #FFF;
+  text-align: center;
+  font-family: "IBM Plex Sans KR";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.8px;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+  .teacher-popup .status {
+    font-size: 16px;
+    font-family: "IBM Plex Sans KR";
+    margin-left: auto;
+  }
+  
+  .teacher-popup .teacher-name {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .teacher-popup .teacher-description span {
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .teacher-popup .teacher-description p {
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .teacher-popup .teacher-details li, .teacher-popup .teacher-details p {
+    font-size: 18px;
+  }
+  
+  .teacher-popup .teacher-details span {
+    font-size: 16px;
+  }
+
+  .teacher-popup button {
+    padding: 16px 24px;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
+}
+
+@media (max-width: 800px) {
+  .teacher-popup .status {
+    font-size: 12px;
+    font-family: "IBM Plex Sans KR";
+    margin-left: auto;
+  }
+  
+  .teacher-popup .teacher-name {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .teacher-popup .teacher-description span {
+    font-size: 12px;
+    text-align: left;
+  }
+  
+  .teacher-popup .teacher-description p {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .teacher-popup .teacher-details li, .teacher-popup .teacher-details p {
+    font-size: 14px;
+  }
+  
+  .teacher-popup .teacher-details span {
+    font-size: 12px;
+  }
+
+  .teacher-popup button {
+    padding: 12px 20px;
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
+}

@@ -9,6 +9,11 @@ html, body {
     font-style: normal;
     margin: 0;
     padding: 0;
+    overflow: auto; /* Default behavior */
+}
+
+body.no-scroll {
+    overflow: hidden; /* Hide scrollbar when popup is open */
 }
 
 .orange {
