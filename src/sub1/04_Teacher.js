@@ -18,7 +18,7 @@ const teachersData = [
     days: "화, 목",
     time: "13-17시",
     status: statusMsg.active,
-    statusType: "active",
+    statusType: "활동중",
     image: member1,
     qualifications: [
       "자격증1",
@@ -36,7 +36,7 @@ const teachersData = [
     days: "화, 목",
     time: "13-17시",
     status: statusMsg.preparing,
-    statusType: "preparing",
+    statusType: "활동예정",
     image: member1,
     qualifications: [
       "자격증3",
@@ -54,7 +54,7 @@ const teachersData = [
     days: "토, 일",
     time: "13-17시",
     status: statusMsg.ready,
-    statusType: "ready",
+    statusType: "교육중",
     image: member1,
     qualifications: [
       "자격증5",

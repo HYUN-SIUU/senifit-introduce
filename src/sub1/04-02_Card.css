@@ -46,15 +46,15 @@
   margin: 0 auto;
 }
 
-.status.active {
+.status.활동중 {
   background-color: #DFEDFf;
   color: #003D8E;
 }
-.status.preparing {
+.status.활동예정 {
   background: #D9FFE7;
   color: #008E34;
 }
-.status.ready {
+.status.교육중 {
   background-color: #FFF2DA;
   color: #8E5C00;
 }
@@ -217,12 +217,27 @@
   }
 }
 
+
+
+
+
 .teacher-popup .teacher-image {
-  width: 100%; /* 이미지가 팝업의 너비에 맞게 조정 */
-  max-width: 480px; /* 이미지 최대 너비 제한 */
-  height: auto; /* 세로 비율 유지 */
-  max-height: 300px; /* 이미지가 높이를 초과하지 않도록 제한 */
-  object-fit: cover; /* 이미지가 잘리지 않도록 비율 유지 */
+  width: 480px;
+  height: 480px;
+}
+
+@media (max-width: 1270px) and (min-width: 800px) {
+  .teacher-popup .teacher-image {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 800px) {
+  .teacher-popup .teacher-image {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 
@@ -236,30 +251,36 @@
 
 .teacher-popup .teacher-name {
   font-size: 32px;
+  font-family: "IBM Plex Sans KR";
 }
 
 .teacher-popup .teacher-description span {
   font-size: 22px;
   text-align: left;
+  font-family: "IBM Plex Sans KR";
 }
 
 .teacher-popup .teacher-description p {
   font-size: 24px;
   text-align: left;
+  font-family: "IBM Plex Sans KR";
 }
 
 .teacher-popup .teacher-details li, .teacher-popup .teacher-details p {
   font-size: 24px;
+  font-family: "IBM Plex Sans KR";
 }
 
 .teacher-popup .teacher-details span {
   font-size: 22px;
+  font-family: "IBM Plex Sans KR";
 }
 
 .teacher-popup .teacher-details ul {
   list-style-type: none;
   margin-left: 0px;
   padding-left: 0;
+  font-family: "IBM Plex Sans KR";
 }
 
 .teacher-popup .teacher-details li::before {
@@ -288,7 +309,6 @@
 @media (max-width: 1270px) and (min-width: 800px) {
   .teacher-popup .status {
     font-size: 16px;
-    font-family: "IBM Plex Sans KR";
     margin-left: auto;
   }
   
