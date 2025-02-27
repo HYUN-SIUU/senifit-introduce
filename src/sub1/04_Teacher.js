@@ -1,78 +1,61 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./04_Teacher.css";
 import FilterPopup from "./04-01_Filter";
-import Card from "./04-02_Card";
-import member1 from "../img/sub1_03_member1.png";
+import TeacherCard from "./04-02_Card";
 
-const statusMsg = {
+const message = {
   active: "현재 활발히 활동하고 있어요!",
   preparing: "아직은 수업 준비중이에요 :)",
   ready: "예비 협회원! 교육수료 후 올게요!"
 };
 
-const teachersData = [
-  {
-    name: "최진석",
-    description: "안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요.",
-    region: "서울",
-    days: "화, 목",
-    time: "13-17시",
-    status: statusMsg.active,
-    statusType: "활동중",
-    image: member1,
-    qualifications: [
-      "자격증1",
-      "자격증2"
-    ],
-    career: [
-      "경력1",
-      "경력2"
-    ]
-  },
-  {
-    name: "최진석",
-    description: "안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요.",
-    region: "경기",
-    days: "화, 목",
-    time: "13-17시",
-    status: statusMsg.preparing,
-    statusType: "활동예정",
-    image: member1,
-    qualifications: [
-      "자격증3",
-      "자격증4"
-    ],
-    career: [
-      "경력3",
-      "경력4"
-    ]
-  },
-  {
-    name: "최진석",
-    description: "안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요.",
-    region: "제주",
-    days: "토, 일",
-    time: "13-17시",
-    status: statusMsg.ready,
-    statusType: "교육중",
-    image: member1,
-    qualifications: [
-      "자격증5",
-      "자격증6",
-      "자격증7"
-    ],
-    career: [
-      "경력5",
-      "경력6",
-      "경력7"
-    ]
-  }
-];
-
 const Teacher = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState(["전국"]);
   const [selectedStatus, setSelectedStatus] = useState(["전체"]);
+
+  const [teachersData, setTeachersData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchTeachers = async () => {
+      try {
+        const response = await fetch("http://ec2-43-203-236-199.ap-northeast-2.compute.amazonaws.com:8080/api/members");
+        const data = await response.json();
+        if (data.status === 200) {
+          var type;
+          if (data.data.status === "활동중") {
+            type = message.active;
+          }
+          else if (data.data.status === "활동예정") {
+            type = message.preparing;
+          }
+          else if (data.data.status === "교육중") {
+            type = message.ready;
+          }
+
+          setTeachersData(data.data.map(teacher => ({
+            memberId: teacher.memberId,
+            profile: teacher.profile,
+            statusType: teacher.status,
+            statusMsg: type,
+            name: teacher.name,
+            description: teacher.description,
+            region: "전국",
+            days: teacher.weeks.map(week => week.name).join(", "),
+            time: teacher.time + "시"
+          })));
+        }
+      } catch (error) {
+        console.error("Failed to fetch teachers:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchTeachers();
+  }, []);
+
+  if (loading) return <p>로딩 중...</p>;
 
   const filteredTeachers = teachersData.filter((teacher) => {
     const regionMatch = selectedRegions.includes("전국") || selectedRegions.includes(teacher.region);
@@ -103,8 +86,8 @@ const Teacher = () => {
       />
 
       <div className="teachers-grid">
-        {filteredTeachers.map((teacher, index) => (
-          <Card key={index} teacher={teacher}/>
+        {filteredTeachers.map((teacher) => (
+          <TeacherCard key={teacher.memberId} teacher={teacher}/>
         ))}
       </div>
 

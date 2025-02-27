@@ -6,6 +6,7 @@ import Sub2 from './pages/SGEE_Sub2_Intro(SINI)';
 import Sub3 from './pages/SGEE_Sub3_Edu';
 import Pop from './sub3/02-2_Pop';
 import Sub4 from './pages/SGEE_Sub4_Cont';
+import HeaderMenu from './header/HeaderMenu';
 import ScrollToTop from "./hooks/scorllToTop";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/sub3/pop" element={<Pop />} />
                     <Route path="/sub4" element={<Sub4 />} />
                     <Route path="*" element={<Main />} />
+                    <Route path="/menu" element={<HeaderMenu />} />
                 </Routes>
             </div>
         </Router>
