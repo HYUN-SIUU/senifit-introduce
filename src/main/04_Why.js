@@ -8,6 +8,8 @@ import Image1 from '../img/04_why1.png';
 import Image2 from '../img/04_why2.png';
 import Image3 from '../img/04_why3.png';
 import Image4 from '../img/04_why4.png';
+// import "animate.css"
+// import useScrollAnimation from "../hooks/useScrollAnimation";
 
 function Why() {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1270);
@@ -27,8 +29,15 @@ function Why() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    // const { isVisible, elementRef } = useScrollAnimation();
+
     return (
-        <div className="why">
+        // <div 
+        //     ref={elementRef}
+        //     className={`why ${isVisible ? "animate__animated animate__fadeInUp" : ""}`}
+        //     style={{ opacity: isVisible ? 1 : 0 }}
+        // >
+        <div className='why'>
             {isLargeScreen ? (
                 <>
                 <div className="up">

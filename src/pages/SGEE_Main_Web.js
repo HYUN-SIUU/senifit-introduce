@@ -44,8 +44,7 @@ function Main() {
     return (
         <div>
             <Header />
-            <MainTitle/>
-            <SNSLinks />
+            <MainTitle />
             <Needed />
             <Why />
             <Verified />
@@ -53,6 +52,7 @@ function Main() {
             {/*<Promotion />*/}
             <Apply />
             <LearnMore />
+            <SNSLinks />
             <Footer />
             {/* 나머지 섹션을 필요에 따라 추가할 수 있습니다. */}
         </div>

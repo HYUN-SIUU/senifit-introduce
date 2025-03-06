@@ -12,7 +12,7 @@ import ScrollToTop from "./hooks/scorllToTop";
 function App() {
     return (
         <Router>
-            <div style={{ maxWidth: '1440px', margin: 'auto' }}>
+            <div>
                 <ScrollToTop />
                 <Routes>
                     <Route path="/main" element={<Main />} />

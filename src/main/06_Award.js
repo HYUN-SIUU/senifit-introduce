@@ -37,7 +37,7 @@ function Award() {
                     className='video-container'
                     src="https://tv.naver.com/embed/66919186"
                     title="senifit-video"
-                    allowfullscreen>
+                    allowFullScreen>
                 </iframe>
             </div>
             {/* 배경 사진 영역 */}
