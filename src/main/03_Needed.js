@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/all.css"
 import './03_Needed.css';
+// import "animate.css"
+// import useScrollAnimation from "../hooks/useScrollAnimation";
 
 function Needed() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
@@ -14,8 +16,15 @@ function Needed() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    // const { isVisible, elementRef } = useScrollAnimation();
+
     return (
-        <div className="needed">
+        // <div 
+        //     ref={elementRef}
+        //     className={`needed ${isVisible ? "animate__animated animate__fadeInUp animate__faster" : ""}`}
+        //     style={{ opacity: isVisible ? 1 : 0 }}
+        // >
+        <div className='needed'>
             <div className="title">
                 <p>원장님, 이런&nbsp;<span className="orange">고민</span>&nbsp;있지 않으세요?</p>
             </div>

@@ -5,11 +5,11 @@ import './02_MainTitle.css';
 
 function MainTitle() {
     const handleConsultClick = () => {
-        window.open("https://forms.gle/YRKqLGjRfMHiHEp99", "_blank");
+        window.open("http://pf.kakao.com/_rXiVn", "_blank");
     };
 
     return (
-        <div className="main-title">
+        <div className='main-title'>
             <div>
                 <p className="h2">복지사님들과 어르신들의 피드백을 바탕으로 SGEE가 자체 개발한</p>
             </div>
