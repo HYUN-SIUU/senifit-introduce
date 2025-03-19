@@ -6,6 +6,7 @@ import bgImage1 from '../img/06_award1.jpg';
 import bgImage2 from '../img/06_award2.jpg';
 import bgImage3 from '../img/06_award3.jpg';
 import bgImage4 from '../img/06_award4.png';
+import bgImage5 from '../img/06_award5.png';
 import bgImage6 from '../img/06_award6.png';
 
 
@@ -77,8 +78,12 @@ function Award() {
                             </div>
                         </div>
                         <div>
-                        <div className="background-item">
-                                <img src={bgImage6} alt="배경 이미지 6" />
+                            <div className="background-item" onClick={() => openLink('http://www.kleaders.com/bbs/bbs_detail.asp?idx=13302')}>
+                                <img src={bgImage5} alt="배경 이미지 5" />
+                                <div className="overlay">
+                                    <p>시니어의 삶의 질 자체를 향상하는 기업으로 거듭나겠다</p>
+                                    <span>출처 : 한국리더스포럼</span>
+                                </div>
                             </div>
                             <div className="background-item">
                                 <img src={bgImage6} alt="배경 이미지 6" />
@@ -119,8 +124,12 @@ function Award() {
                                 <span>출처 : 뉴스메이커</span>
                             </div>
                         </div>
-                        <div className="background-item">
-                            <img src={bgImage6} alt="배경 이미지 6" />
+                        <div className="background-item" onClick={() => openLink('http://www.kleaders.com/bbs/bbs_detail.asp?idx=13302')}>
+                            <img src={bgImage5} alt="배경 이미지 5" />
+                            <div className="overlay">
+                                <p>시니어의 삶의 질 자체를 향상하는 기업으로 거듭나겠다</p>
+                                <span>출처 : 한국리더스포럼</span>
+                            </div>
                         </div>
                         <div className="background-item">
                             <img src={bgImage6} alt="배경 이미지 6" />
